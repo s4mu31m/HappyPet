@@ -1,6 +1,7 @@
 <footer>
-        <p>Todos los derechos reservados a Tributo Rick Sánchez</p>
+    <p>Todos los derechos reservados TPAS 2023 ®</p>
 
-    </footer>
+</footer>
 </body>
+
 </html>

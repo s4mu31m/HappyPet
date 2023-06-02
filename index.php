@@ -1,4 +1,11 @@
 <?php
+require "./database.php";
+
+session_start();
+
+
+
+
 $service_url = 'https://fakestoreapi.com/products';
 $curl = curl_init($service_url);
 
@@ -26,6 +33,11 @@ $randomProduct = $products[array_rand($products)]; // Selecciona un producto ale
 <?php require "./partials/header.php"; ?>
 
 <body>
+    <?php if (isset($_SESSION["user"])) : ?>
+        <div class="p-2">
+            <?= $_SESSION["user"]["email"] ?>
+        </div>
+    <?php endif ?>
     <header>
         <h1 class="titu">HappyPet</h1>
     </header>
@@ -62,7 +74,7 @@ $randomProduct = $products[array_rand($products)]; // Selecciona un producto ale
                 </div>
             <?php endforeach; ?>
         </main>
-        
+
     </div>
 
 
