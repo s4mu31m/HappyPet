@@ -1,6 +1,6 @@
+/* LOGIN */
 body {
    
-    
     font-family: Arial, sans-serif;
     margin: 20px;
   }
@@ -10,7 +10,7 @@ body {
   }
 
   .container {   
-    background-image: url("../logo.png");
+    background-image: url("../img/logo.jpg");
     border: 2px solid black;
     padding: 20px;
     max-width:700px;    
@@ -23,7 +23,6 @@ body {
     align-items: center;
   }
   
-
 
   .form-group {
     margin-bottom: 15px;
@@ -46,3 +45,5 @@ body {
     color: white;
     border: none;
   }
+
+  /* FIN LOGIN */
