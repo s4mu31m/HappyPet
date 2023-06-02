@@ -1,0 +1,48 @@
+body {
+   
+    
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .container {   
+    background-image: url("../logo.png");
+    border: 2px solid black;
+    padding: 20px;
+    max-width:700px;    
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+  }
+  
+
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color:darkgreen;
+    color: white;
+    border: none;
+  }
