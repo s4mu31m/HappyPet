@@ -1,27 +1,64 @@
 /* LOGIN */
 body {
-   
-    font-family: Arial, sans-serif;
-    margin: 20px;
+   background: rgb(2,0,36);
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(184,237,230,1) 0%, rgb(173, 204, 200) 7%, rgb(136, 181, 201) 32%, rgb(103, 135, 158) 51%);     
+   font-family: Arial, sans-serif;
+   margin: 20px;
   }
 
-  h1 {
-    text-align: center;
+  h1 { 
+    color: white;
+    margin-top: 0s;    
   }
+
 
   .container {   
-    background-image: url("../img/logo.jpg");
-    border: 2px solid black;
-    padding: 20px;
-    max-width:700px;    
+   
+    
+    background: rgba(176, 201, 237, 0.38);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 1, 0, 5);
+    backdrop-filter: blur(7.8px);
+    -webkit-backdrop-filter: blur(7.8px);
+    border: 1px solid rgba(176, 201, 237, 0.12);
+    padding: 28px;
+    width: 300px; 
+    height: 300px;
     margin: 0 auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: grid;
+    align-items: flex-start;    
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position: 15px;
+    padding-left: 350px; 
+    background-image: url("../img/logo.png");
+    background-size: 300px 300px; 
+    
+  }
+  #crearcuenta{
+    color: white;
     display: flex;
     align-items: center;
+    position: absolute;
+    padding-top: 2%;
+    text-decoration: none;
+    
+
   }
+  #recupera{
+    color: white;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    left: 50%;
+    padding-top: 4.5%;
+    text-decoration: none;
+  }
+  
   
 
   .form-group {
@@ -39,11 +76,18 @@ body {
   }
 
   .form-group button {
+    background: rgba(107, 121, 239, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border: 1px solid rgba(107, 121, 239, 0.74);
     width: 100%;
     padding: 10px;
-    background-color:darkgreen;
+    
     color: white;
     border: none;
+    border-radius: 28px;
   }
 
   /* FIN LOGIN */
