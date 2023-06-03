@@ -15,12 +15,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $statement->execute();
 
     if ($statement->rowCount() == 0) {
-      $error = "Usuario invalido.";
+      $error = "Credenciales invalidas.";
     } else {
       $user = $statement->fetch(PDO::FETCH_ASSOC);
 
-      if ($_POST["password"] != $user["password"]) {
-        $error = "Invalid credentials.";
+      if (!password_verify($_POST["password"], $user["password"])) {
+        $error = "Credenciales invalidas.";
       } else {
         session_start();
 
@@ -39,26 +39,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <?php require "./partials/header.php" ?>
 
 <body>
-  <h1>Iniciar sesión</h1>
+
   <div class="container">
-    <?php if ($error) : ?>
-      <p class="text-danger">
-        <?= $error ?>
-      </p>
-    <?php endif ?>
+    <h1>Bienvenido</h1>
     <form action="login.php" method="POST">
       <div class="form-group ">
-        <label for="username">Correo:</label>
+        <label for="email">Correo:</label>
         <input type="email" id="email" name="email" required>
       </div>
       <div class="form-group ">
         <label for="password">Contraseña:</label>
         <input type="password" id="password" name="password" required>
       </div>
-
       <div class="form-group ">
-        <button type="submit">Iniciar sesión</button>
+        <button id="login-button" type="submit">Iniciar sesión</button>
+        <?php if ($error) : ?>
+          <p class="text-danger"><?= $error ?></p>
+        <?php endif ?>
       </div>
+      <p class="crearcuenta">No tienes una cuenta?</p><a id="crearcuenta" href="register.php">Crea una cuenta</a>
     </form>
   </div>
+  <script src="js\function.js"></script>
   <?php require "./partials/header.php" ?>
