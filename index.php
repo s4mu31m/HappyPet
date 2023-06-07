@@ -36,7 +36,7 @@ $randomProduct = $products[array_rand($products)]; // Selecciona un producto ale
 
 <body>
 
-  <?php require "partials/navbar.php"; ?>
+<?php require "partials/navbar.php"; ?>
   <section class="principal">
 
     <article class=" presentacion">

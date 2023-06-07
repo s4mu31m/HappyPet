@@ -1,6 +1,6 @@
 <?php
 
-require "database.php";
+
 
 $error = null;
 
@@ -26,47 +26,61 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           ":password" => password_hash($_POST["password"], PASSWORD_BCRYPT),
         ]);
 
-        $statement = $conn->prepare("SELECT * FROM users WHERE email = :email LIMIT 1");
-        $statement->bindParam(":email", $_POST["email"]);
-        $statement->execute();
-        $user = $statement->fetch(PDO::FETCH_ASSOC);
+      $statement = $conn->prepare("SELECT * FROM users WHERE email = :email LIMIT 1");
+      $statement->bindParam(":email", $_POST["email"]);
+      $statement->execute();
+      $user = $statement->fetch(PDO::FETCH_ASSOC);
 
-        session_start();
-        $_SESSION["user"] = $user;
+      session_start();
+      $_SESSION["user"] = $user;
 
-        header("Location: index.php");
+      header("Location: index.php");
     }
   }
 }
 
 ?>
 
-<?php require "./partials/header.php" ?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registra tu cuenta</title>
+  <link rel="stylesheet" href="style\login.css" />
+  <script src="ruta_del_archivo.js"></script>
+
+</head>
 
 <body>
-  
+
   <div class="container">
-    <h1 >Bienvenido</h1>
-    
+    <h1>Bienvenido</h1>
+
     <form action="register.php" method="POST">
       <div class="form-group ">
-        <label for="name">Nombre Usuario:</label>
-        <input type="text" id="name" name="name" required>
+        <label for="name">Usuario:</label>
+        <input type="text" placeholder="Ingresa tu nombre de usuario" id="name" name="name" required>
       </div>
       <div class="form-group ">
         <label for="email">Correo:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" placeholder="Ingresa tu correo" id="email" name="email" required>
       </div>
       <div class="form-group ">
         <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" placeholder="Ingresa contraseña" id="password" name="password" required>
       </div>
       <div class="form-group ">
-        <button type="submit">Iniciar sesión</button>
-        <link rel="stylesheet" href="./index.html">
-      
-        <p class="crearcuenta">Ya tienes una cuenta?</p><a id ="crearcuenta" href="login.php">Iniciar sesión</a>
+        <button id="login-button" type="submit">Iniciar sesión</button>
+        <?php if ($error) : ?>
+          <p class="text-danger"><?= $error ?></p>
+        <?php endif ?>
+      </div>
+      <div class="tienes">
+        <p style="display: inline-block;margin-right:15px;">Ya tienes una cuenta? </p><a style="text-decoration: none;" href="login.php">Inicia Sesion</a>
+
       </div>
     </form>
-  </div> 
-  <?php require "./partials/header.php" ?>
+  </div>
+  

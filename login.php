@@ -1,6 +1,6 @@
 <?php
 
-require "./database.php";
+
 
 $error = null;
 
@@ -36,20 +36,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ?>
 
-<?php require "./partials/header.php" ?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresa a tu cuenta</title>
+    <link rel="stylesheet" href = "style\login.css" />
+    <script src="ruta_del_archivo.js"></script>
+
+</head>
 
 <body>
-
+  
   <div class="container">
     <h1>Bienvenido</h1>
     <form action="login.php" method="POST">
       <div class="form-group ">
         <label for="email">Correo:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" placeholder="Correo" id="email" name="email" required>
       </div>
       <div class="form-group ">
         <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" placeholder="Contraseña" id="password" name="password" required>
       </div>
       <div class="form-group ">
         <button id="login-button" type="submit">Iniciar sesión</button>
@@ -57,8 +66,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <p class="text-danger"><?= $error ?></p>
         <?php endif ?>
       </div>
-      <p class="crearcuenta">No tienes una cuenta?</p><a id="crearcuenta" href="register.php">Crea una cuenta</a>
+      <div class="tienes">
+        <p style="display: inline-block;margin-right:15px;">No tienes una cuenta? </p><a style="text-decoration: none;" href="register.php">Crea una cuenta</a>
+
+      </div>
     </form>
   </div>
   <script src="js\function.js"></script>
-  <?php require "./partials/header.php" ?>
+  
