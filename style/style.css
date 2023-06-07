@@ -22,12 +22,27 @@ body {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-.shake {
-  animation: shake 0.5s;
-  animation-iteration-count: 2;
+
+.estrellas {
+  display: flex;
+
 }
 
+.estrellas span {
+  display: inline-block;
+  position: relative;
+  padding-right: 2px;
+  margin: 0 10px;  /* Agrega margen alrededor de cada estrella */
+}
 
+.estrellas span::before {
+  content: "☆";
+ 
+}
+
+.estrellas span.completa::before {
+  content: "★";
+}
 
 
 
@@ -137,6 +152,10 @@ nav {
   padding: 20px;
   text-align: center;
 }
+
+
+
+
 
 /* #email {
   display: flex;
