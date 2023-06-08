@@ -1,0 +1,169 @@
+
+/*Efecto fondo de pantalla*/
+body{
+  background: linear-gradient(to right,#98FF9F , #4d7cff  );
+  font-family: 'Poppins', 'Courier New', Courier, monospace;
+}
+
+/* contenedor principal cabezera con un padding de 30px arriba/ abajo y 50px izquierda/derecha*/
+  header{
+    display: flex;
+    padding: 30px 200px 30px 120px;
+    margin-bottom: 30px;
+  }
+
+/*contenedor del icono mas su texto*/
+.icon-principal{
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.icon-principal span{
+  font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+/*contenedor de los enlaces*/
+.enlaces{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%; 
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/*todos las listas del contenedor enlace tienen un margen a la izquierda de 15px*/
+
+.enlaces li  a {
+  color: whitesmoke;
+  text-decoration: none;  
+  margin-left: 50px;
+  font-size: 22px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Contenido principal de la pagina*/
+.principal{
+   padding: 35px 90px 35px 150px;
+   display:flex
+}
+
+.presentacion h1{
+   margin-top: 0;
+   font-size: 70px;
+   margin: 0;
+   margin-bottom: 10px;
+}
+
+
+
+.presentacion p {
+  font-size: 25px;
+}
+
+.btn btn-light{
+    border-radius: 50px;
+    margin-left: 20px;
+    padding: 0;
+
+}
+
+
+
+
+
+
+
+
+
+/*Carta Poductos*/
+
+.contenedor-productos{
+   display: flex;
+   justify-content: center;
+}
+
+.productos {
+  width: 300px;
+  background-color: rgba(244, 244, 244, 0.5); /* Fondo transparente al 50% */
+  border-radius: 10px;
+  border: 1px solid #000000; /* Borde fino y negro */
+  padding: 20px; 
+  margin: 20px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Efecto de sombreado en los bordes */
+}
+
+.productos img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.productos h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.productos p {
+  color: rgb(133, 133, 133);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.productos .precio{
+  color: #ff3700;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
