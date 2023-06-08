@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-<?php require "./partials/header.php" ?>
-=======
 <?php
 
 require "database.php";
@@ -50,7 +47,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </head>
 
->>>>>>> Stashed changes
 <body>
   <h1>Iniciar sesión</h1>
   <div class="container">

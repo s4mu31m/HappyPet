@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 <?php
 
 
@@ -19,31 +17,11 @@ $productos = json_decode($json);
 
 
 
->>>>>>> Stashed changes
 <?php require "./partials/header.php"; ?>
+
+
+
 <body>
-<<<<<<< Updated upstream
-    <header>
-        <h1 class="titu">HappyPet</h1>
-    </header>
-    <div class="nav-bg">
-        <nav class="navegacion-principal contenedor">
-    
-            <a href="">Inicio</a>
-            <a href="">Nosotros</a>
-            <a href="">Alimento</a>
-            <a href="">Accesorios</a>
-            <a href="">Contacto</a>
-            <a href="">Mi Cuenta</a>
-            
-        </nav>
-    </div>
-    <section class="happy">
-        <div class="contenido-happy">
-            
-            
-            
-=======
 
   <?php require "partials/navbar.php"; ?>
   <section class="principal">
@@ -98,29 +76,11 @@ $productos = json_decode($json);
           }
           echo "</div>";
           ?>
->>>>>>> Stashed changes
         </div>
-    </section>
-    <div>
-        
-   
-    <main class="contenedor sombra">
-        <h2>Ofertas</h2>
+      <?php endforeach; ?>
+    </main>
 
-        <div class="imagenes">
-            <section class="servicio">
-                <h3 >Pistola de portales</h3>
-                <div class="imagenp">
+  </div>
 
-                </div>
-                                             
-                
-            </section>
-            
-        </div>
-    <main>
-     
-    
-</section>
 
-<?php require "./partials/footer.php"; ?>
+  <?php require "./partials/footer.php"; ?>
