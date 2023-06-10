@@ -153,6 +153,50 @@ nav {
   text-align: center;
 }
 
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.product {
+  width: 20%; /* Ajustar de acuerdo a tus necesidades */
+  flex-grow: 1;
+  background-color: rgba(244, 244, 244, 0.5);
+  border-radius: 10px;
+  border: 1px solid #000000;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.imagen_producto {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.titulo_producto {
+  width: 50%;
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.descripcion_producto {
+  color: rgb(133, 133, 133);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.precio_producto {
+  color: #ff3700;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
 
 
 

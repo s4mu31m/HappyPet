@@ -1,7 +1,6 @@
 <nav>
     <div class="icon-principal">
-        <i class="fa-solid fa-bone fa-2xl" style="margin-top: 15px; margin-right: 5px;"></i>
-        <span class="texto">Happy pet</span>
+        <img src="img\logo.png" style="width:35%;"/>
     </div>
     <!-- si la sesion esta iniciada, mostrará el correo del Usuario -->
     <?php if (isset($_SESSION["user"])): ?>
@@ -20,7 +19,7 @@
         <li> <a href="">Productos</a></li>
         <li> <a href="">Favoritos</a></li>
         <li> <a href=""><i class="fa-sharp fa-solid fa-cart-shopping fa-xl"></i></a></li>
-        <li> <a href="login.php"><i class="fa-solid fa-right-to-bracket fa-xl" style="color: #ffffff;"></i></a></li>
+        <li> <a href="login.php"><i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i></a></a></li>
     </ul>
     <?php endif ?>
 </nav>
