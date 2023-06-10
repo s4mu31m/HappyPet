@@ -180,8 +180,9 @@ nav {
 .titulo_producto {
   width: 50%;
   color: #333;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 10px;
+ white-space: nowrap;
 }
 
 .descripcion_producto {
