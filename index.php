@@ -24,33 +24,7 @@ $productos = json_decode($json);
 <body>
 
   <?php require "partials/navbar.php"; ?>
-  <section class="principal">
-
-    <article class=" presentacion">
-
-      <h1>Bienvenidos a happy pet!!!</h1>
-
-      <p>Tienda virtual con despacho a domicilio.</p>
-
-
-      <a href=""><button type="button" class="btn btn-light" style="margin-left: 20px; border-radius: 30px; width: 200px;">Comprar</button></a>
-      <a href=""><button type="button" class="btn btn-light" style="margin-left: 20px; border-radius: 30px; width: 200px;">Ver Todo</button></a>
-
-
-
-      <img src="" alt="">
-    </article>
-
-    <article class="redes-img">
-
-      <a href=""><i class="fa-brands fa-facebook fa-2xl" style="color: #f2f2f2;"></i></a>
-      <a href=""><i class="fa-brands fa-twitter fa-2xl" style="color: #f2f2f2;"></i></a>
-      <a href=""><i class="fa-brands fa-instagram fa-2xl" style="color: #f2f2f2;"></i></a>
-
-    </article>
-
-  </section>
-
+  
 
   <div>
 
