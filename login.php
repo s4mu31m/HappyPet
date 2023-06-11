@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-<?php require "./partials/header.php" ?>
-=======
 <?php
 
 require "database.php";
@@ -50,27 +47,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </head>
 
->>>>>>> Stashed changes
 <body>
   
+  
   <div class="container">
-    <h1 >Bienvenido</h1>
-    
-    <form action="validar.php" method="POST">
+    <h1>Bienvenido</h1>
+    <form action="login.php" method="POST">
       <div class="form-group ">
-        <label for="username">Correo:</label>
-        <input type="text" id="username" name="username" pattern="[a-zA-Z0-9]+" oninput="validateUsername(this)" required>
+        <label for="email">Correo:</label>
+        <input type="email" placeholder="Correo" id="email" name="email" required>
       </div>
       <div class="form-group ">
         <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" placeholder="Contraseña" id="password" name="password" required>
       </div>
       <div class="form-group ">
-        <button type="submit">Iniciar sesión</button>
-        <link rel="stylesheet" href="./index.html">
-      
-        <a id ="crearcuenta" href="">Crea una cuenta</a>
-        <a id ="recupera" href="">Recuperar Contraseña</a>
+        <button id="login-button" type="submit">Iniciar sesión</button>
+        <?php if ($error) : ?>
+          <p class="text-danger"><?= $error ?></p>
+        <?php endif ?>
+      </div>
+      <div class="tienes">
+        <p style="display: inline-block;margin-right:15px;">No tienes una cuenta? </p><a style="text-decoration: none;" href="register.php">Crea una cuenta</a>
+
       </div>
     </form>
   </div> 
