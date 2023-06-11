@@ -49,6 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
   
+  
   <div class="container">
     <h1>Bienvenido</h1>
     <form action="login.php" method="POST">
@@ -71,6 +72,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
       </div>
     </form>
-  </div>
-  <script src="js\function.js"></script>
-  
+  </div> 
+<?php require "./partials/header.php" ?>

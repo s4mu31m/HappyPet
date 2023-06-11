@@ -73,9 +73,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
       <div class="form-group ">
         <button id="login-button" type="submit">Iniciar sesión</button>
-        <?php if ($error) : ?>
-          <p class="text-danger"><?= $error ?></p>
-        <?php endif ?>
       </div>
       <div class="tienes">
         <p style="display: inline-block;margin-right:15px;">Ya tienes una cuenta? </p><a style="text-decoration: none;" href="login.php">Inicia Sesion</a>
