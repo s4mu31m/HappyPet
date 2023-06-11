@@ -1,5 +1,9 @@
 /* LOGIN */
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 body {
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(184, 237, 230, 1) 0%, rgb(173, 204, 200) 7%, rgb(136, 181, 201) 32%, rgb(103, 135, 158) 51%);
@@ -9,17 +13,49 @@ body {
 
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 
@@ -32,36 +68,18 @@ body {
   display: inline-block;
   position: relative;
   padding-right: 2px;
-  margin: 0 10px;  /* Agrega margen alrededor de cada estrella */
+  margin: 0 10px;
+  /* Agrega margen alrededor de cada estrella */
 }
 
 .estrellas span::before {
   content: "☆";
- 
+
 }
 
 .estrellas span.completa::before {
   content: "★";
 }
-
-
-
-.text-danger{
-  color: red;
-  position: absolute;
-  padding-top: 2%;
-  text-decoration: none;
-}
-
-
-/* FIN LOGIN */
-
-
-
-/* body {
-  background: linear-gradient(to right, #98FF9F, #4d7cff);
-  font-family: 'Poppins', 'Courier New', Courier, monospace;
-} */
 
 /* contenedor principal cabezera con un padding de 30px arriba/ abajo y 50px izquierda/derecha*/
 nav {
@@ -80,8 +98,6 @@ nav {
 .icon-principal span {
   font-size: 22px;
 }
-
-
 
 /*contenedor de los enlaces*/
 .enlaces {
@@ -102,8 +118,6 @@ nav {
   font-size: 22px;
 
 }
-
-
 
 /*Contenido principal de la pagina*/
 .principal {
@@ -130,39 +144,20 @@ nav {
 
 }
 
-
-/*iconos redes sociales */
-
-.redes-img {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-
-.redes-img i {
-  margin-bottom: 50px;
-  padding-left: 90%;
-}
-
-/*footer*/
-.footer {
-  background-color: #000;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
+/* Listado de productos */
 .productos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  gap: 40px;
+  /* Separa cada producto por 40px */
 }
 
+
 .product {
-  width: 20%; /* Ajustar de acuerdo a tus necesidades */
-  flex-grow: 1;
+  height: 738px;
+  width: 438px;
   background-color: rgba(244, 244, 244, 0.5);
   border-radius: 10px;
   border: 1px solid #000000;
@@ -171,12 +166,23 @@ nav {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
+.product-link {
+  height: 738px;
+  width: 438px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-grow: 1;
+}
+
 .imagen_producto {
   width: 100%;
   height: 60%;
   border-radius: 10px;
   margin-bottom: 10px;
+  object-fit: scale-down;
 }
+
 
 .titulo_producto {
   width: 50%;
@@ -199,10 +205,106 @@ nav {
   margin-top: 10px;
 }
 
+/*footer*/
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 
 
+<<<<<<< Updated upstream
 
 
 /* #email {
   display: flex;
   justify-content: end; */
+=======
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .icon-principal,
+  .enlaces {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .enlaces li a {
+    margin-left: 10px;
+  }
+
+  .principal {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .presentacion h1 {
+    font-size: 50px;
+  }
+
+  .presentacion p {
+    font-size: 20px;
+  }
+
+  .redes-img {
+    align-items: center;
+  }
+
+  .redes-img i {
+    padding-left: 0;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .titulo_producto {
+    font-size: 16px;
+  }
+
+  .descripcion_producto {
+    font-size: 12px;
+  }
+
+  .precio_producto {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .enlaces li a {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
+  .presentacion h1 {
+    font-size: 40px;
+  }
+
+  .presentacion p {
+    font-size: 18px;
+  }
+
+  .titulo_producto {
+    font-size: 14px;
+  }
+
+  .descripcion_producto {
+    font-size: 10px;
+  }
+
+  .precio_producto {
+    font-size: 14px;
+  }
+}
+>>>>>>> Stashed changes
