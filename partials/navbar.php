@@ -5,7 +5,7 @@
     <!-- si la sesion esta iniciada, mostrará el correo del Usuario -->
     <?php if (isset($_SESSION["user"])): ?>
     <ul class="enlaces">
-        <li><a href="">Inicio</a></li>
+        <li><a href="index.php">Inicio</a></li>
         <li> <a href="">Productos</a></li>
         <li> <a href="">Favoritos</a></li>
         <li> <a href=""><i class="fa-sharp fa-solid fa-cart-shopping fa-xl"></i></a></li>
@@ -15,7 +15,7 @@
     <!-- en caso contrario, le dará la opción de iniciar sesión -->
     <?php else: ?>
         <ul class="enlaces">
-        <li><a href="">Inicio</a></li>
+        <li><a href="index.php">Inicio</a></li>
         <li> <a href="">Productos</a></li>
         <li> <a href="">Favoritos</a></li>
         <li> <a href=""><i class="fa-sharp fa-solid fa-cart-shopping fa-xl"></i></a></li>

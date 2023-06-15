@@ -2,14 +2,14 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.productos {
+.productos-pag {
     display: flex;
     float:left;
     align-items:end;
     flex-direction: column;
     margin-top: 30px;
 }
-.product {
+.produc-pag {
     position: relative;
     left: 200px;
     flex-direction: column;
@@ -22,30 +22,30 @@ body {
     box-shadow: 3px 8px 83px 24px rgba(138,131,138,1);
 }
 
-.titulo_producto {
+.titulo_producto-pag {
     font-size: 40px;
     margin-bottom: 20px;
     padding: 85px;
 }
 
-.imagen_producto {
+.imagen_producto-pag {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
 }
 
-.descripcion_producto {
+.descripcion_producto-pag{
     margin-bottom: 10px;
 }
-.precio_producto{
+.precio_producto-pag{
     font-weight: bold;
 }
 
-.estrellas {
+.estrellas-pag {
     display: flex;
     margin-top: 10px;
 }
-.estrellas span {
+.estrellas-pag span {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -53,12 +53,12 @@ body {
     margin-right: 10px;
 }
 
-.completa {
+.completa-pag {
     background-color: yellow;
 
 }
 
-.detalles_producto{
+.detalles_producto-pag{
     position: absolute;
     right: 150px;
     flex-direction: column;
@@ -71,22 +71,19 @@ body {
     box-shadow: 3px 8px 83px 24px rgba(138,131,138,1);
 }
 
-#comentarios {
+#comentarios-pag {
     margin-bottom:20px;
     flex-direction:column-reverse;
 }
-h3 {
-    margin-top: 40px;
-}
-#Formulario {
+
+#Formulario-pag {
     margin-bottom: 5px;
 }
 label {
     display: block;
     margin-bottom: 5px;
 }
-input [type="textarea"],
-textarea {
+.textarea-pag {
     width: 70%;
     padding: 5px 10px;
     background-color: #ccc;
