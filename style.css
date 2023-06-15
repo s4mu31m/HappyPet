@@ -1,0 +1,96 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.productos {
+    display: flex;
+    float:left;
+    align-items:end;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.product {
+    position: relative;
+    left: 200px;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 400px;
+    border-radius: 60px 57px 57px 57px;
+    box-shadow: 3px 8px 83px 24px rgba(138,131,138,1);
+}
+
+.titulo_producto {
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding: 85px;
+}
+
+.imagen_producto {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.descripcion_producto {
+    margin-bottom: 10px;
+}
+.precio_producto{
+    font-weight: bold;
+}
+
+.estrellas {
+    display: flex;
+    margin-top: 10px;
+}
+.estrellas span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    margin-right: 10px;
+}
+
+.completa {
+    background-color: yellow;
+
+}
+
+.detalles_producto{
+    position: absolute;
+    right: 150px;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 400px;
+    border-radius: 60px 57px 57px 57px;
+    box-shadow: 3px 8px 83px 24px rgba(138,131,138,1);
+}
+
+#comentarios {
+    margin-bottom:20px;
+    flex-direction:column-reverse;
+}
+h3 {
+    margin-top: 40px;
+}
+#Formulario {
+    margin-bottom: 5px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input [type="textarea"],
+textarea {
+    width: 70%;
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+

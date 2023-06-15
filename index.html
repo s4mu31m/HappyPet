@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interfaz</title>
+</head>
+
+<body>
+    <main class="productos">
+        <div class="product">
+
+            <h1 class='titulo_producto'>Comida perro</h1>
+            <img class='imagen_producto' src="#" alt='Imagen del producto'>
+            <p class='descripcion_prodcuto'>Esta rica </p>
+            <p class='precio_producto'>Precio: lo mas baratillo</p>
+
+            <!-- // Procesar la calificación -->
+
+            <div class='estrellas'>
+
+                <span class='completa'></span>
+
+                <span></span>
+
+
+            </div>
+
+        </div>
+
+        <div class="detalles_producto">
+            <h2 class="Description">Descripcion</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nesciunt iure labore rem voluptatum molestias excepturi vitae architecto adipisci ducimus molestiae accusamus reiciendis error, quis explicabo impedit numquam non itaque!</p>
+            <h2>Comentarios</h2>
+            <div id="comentarios"></div>
+            <h3>Agregar comentario</h3>
+            <form id="Formulario" onsubmit="agregarComentario(event)">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required> <br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" required></textarea><br>
+            <button type="submit">Enviar comentario</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+
+
+</html>
