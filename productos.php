@@ -1,4 +1,8 @@
 <?php
+
+require "partials/header.php";
+require "partials/navbar.php";
+
 $id = $_GET['id']; // Obtiene el ID del producto del parámetro GET
 
 // Carga todos los productos de products.json
@@ -97,4 +101,7 @@ if ($product) {
     // Si no se encontró el producto, muestra un mensaje de error
     echo "<p>Producto no encontrado.</p>";
 }
-?>
+
+require "partials/footer.php";
+
+    ?>
