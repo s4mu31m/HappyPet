@@ -18,12 +18,6 @@ foreach ($products as $p) {
 }
 
 if ($product) {
-<<<<<<< Updated upstream
-    // Si se encontró el producto, muestra su información
-    echo "<h1>" . $product['title'] . "</h1>";
-    echo "<p>" . $product['description'] . "</p>";
-    echo "<p>Precio: $" . $product['price'] . "</p>";
-=======
 ?>
 
     <body>
@@ -96,7 +90,6 @@ if ($product) {
         </main>
     <?php
 
->>>>>>> Stashed changes
 } else {
     // Si no se encontró el producto, muestra un mensaje de error
     echo "<p>Producto no encontrado.</p>";
