@@ -4,12 +4,18 @@
     "title": "Alimento de Salmon para Gatos ",
     "price": 8900,
     "description": "BRAVERY SALMON ADULT CAT",
+    "resume": "",
     "category": "men's clothing",
     "image": "img/gato/BRAVERY SALMON ADULT CAT.jpg",
-    "rating": {
-      "rate": 3.9,
-      "count": 120
-    }
+  
+
+    "comments": [
+      {
+        "nombre": "JULIO LINARES",
+        "mensaje": "deberian adevertir que no es para humanos xd\r\n"
+      }
+    ],
+    "rating": { "rate": 3.9, "count": 120 }
   },
   {
     "id": 2,
@@ -18,10 +24,7 @@
     "description": "chaleco rojo perros y gatos impermeable",
     "category": "men's clothing",
     "image": "img/gato/chaleco_rojo_perros_y_gatos_impermeable.jpg",
-    "rating": {
-      "rate": 4.1,
-      "count": 259
-    }
+    "rating": { "rate": 4.1, "count": 259 }
   },
   {
     "id": 3,
@@ -30,22 +33,16 @@
     "description": "indoor cat rich in chicken",
     "category": "men's clothing",
     "image": "img/gato/indoor-cat-rich-in-chicken.jpg",
-    "rating": {
-      "rate": 4.7,
-      "count": 500
-    }
+    "rating": { "rate": 4.7, "count": 500 }
   },
   {
     "id": 4,
     "title": "Brit Care Cat Sterilized Sensitive",
     "price": 15.99,
-    "description": "para la salud de los riñones y el tracto urinario",
+    "description": "para la salud de los ri\u00f1ones y el tracto urinario",
     "category": "men's clothing",
     "image": "img/gato/M_brit-care-cat-gf-sterilized-sensitive2252.jpg",
-    "rating": {
-      "rate": 2.1,
-      "count": 430
-    }
+    "rating": { "rate": 2.1, "count": 430 }
   },
   {
     "id": 5,
@@ -54,10 +51,7 @@
     "description": "juguete para la recreacion de mascotas",
     "category": "jewelery",
     "image": "img/gato/Pawise_Meow_Life_Bola_Colores.jpg",
-    "rating": {
-      "rate": 4.6,
-      "count": 400
-    }
+    "rating": { "rate": 4.6, "count": 400 }
   },
   {
     "id": 6,
@@ -66,22 +60,16 @@
     "description": "peluche y varita de unicornio pawise",
     "category": "jewelery",
     "image": "img/gato/peluche-y-varita-de-unicornio-pawise.jpg",
-    "rating": {
-      "rate": 3.9,
-      "count": 70
-    }
+    "rating": { "rate": 3.9, "count": 70 }
   },
   {
     "id": 7,
     "title": "Alimento reducido en caloria 3 kl",
     "price": 9.99,
-    "description": "Fórmula de vanguardia que ayuda a lograr un peso corporal ideal",
+    "description": "F\u00f3rmula de vanguardia que ayuda a lograr un peso corporal ideal",
     "category": "jewelery",
     "image": "img/gato/Pro_plan_reduced_calorias_3_kl.png",
-    "rating": {
-      "rate": 3,
-      "count": 400
-    }
+    "rating": { "rate": 3, "count": 400 }
   },
   {
     "id": 8,
@@ -90,10 +78,7 @@
     "description": "alimento completo y balanceado para gatos adultos ",
     "category": "jewelery",
     "image": "img/gato/Pro_plan_sterilized_cat.png",
-    "rating": {
-      "rate": 1.9,
-      "count": 100
-    }
+    "rating": { "rate": 1.9, "count": 100 }
   },
   {
     "id": 9,
@@ -102,10 +87,7 @@
     "description": "alimento completo para el gato con apetito muy exigente",
     "category": "electronics",
     "image": "img/gato/ROYAL_CANIN_EXIGENT_6.png",
-    "rating": {
-      "rate": 3.3,
-      "count": 203
-    }
+    "rating": { "rate": 3.3, "count": 203 }
   },
   {
     "id": 10,
@@ -114,10 +96,7 @@
     "description": "alimento indicado para gatitos de hasta 12 meses",
     "category": "electronics",
     "image": "img/gato/ROYAL_CANIN_KITTEN_(1).png",
-    "rating": {
-      "rate": 2.9,
-      "count": 470
-    }
+    "rating": { "rate": 2.9, "count": 470 }
   },
   {
     "id": 11,
@@ -126,46 +105,34 @@
     "description": "Alimento especialmente formulado para para gatos adultos esterilizados",
     "category": "electronics",
     "image": "img/gato/sterilised-rich-in-chicken.jpg",
-    "rating": {
-      "rate": 4.8,
-      "count": 319
-    }
+    "rating": { "rate": 4.8, "count": 319 }
   },
   {
     "id": 12,
     "title": " Juguete para perro ",
     "price": 114,
-    "description": "Divertido juguete tipo pelota que asegura la entretención de tu perro",
+    "description": "Divertido juguete tipo pelota que asegura la entretenci\u00f3n de tu perro",
     "category": "electronics",
     "image": "img/perro/aikiou-pelota-portagolosinas-s.jpg",
-    "rating": {
-      "rate": 4.8,
-      "count": 400
-    }
+    "rating": { "rate": 4.8, "count": 400 }
   },
   {
     "id": 13,
     "title": "Alimento perros adultos Amity",
     "price": 599,
-    "description": "alimento para perros adultos de todas las razas y tamaños",
+    "description": "alimento para perros adultos de todas las razas y tama\u00f1os",
     "category": "electronics",
     "image": "img/perro/Amity_14_kl.png",
-    "rating": {
-      "rate": 2.9,
-      "count": 250
-    }
+    "rating": { "rate": 2.9, "count": 250 }
   },
   {
     "id": 14,
     "title": "Alimento seco para perro Amity",
     "price": 999.99,
-    "description": "alimento para perros adultos de todas las razas y tamaños",
+    "description": "alimento para perros adultos de todas las razas y tama\u00f1os",
     "category": "electronics",
     "image": "img/perro/AMITY_SP_LOW_GRAIN_CHICKEN_ADULT_14_KG.png",
-    "rating": {
-      "rate": 2.2,
-      "count": 140
-    }
+    "rating": { "rate": 2.2, "count": 140 }
   },
   {
     "id": 15,
@@ -174,46 +141,34 @@
     "description": "Alimento Super Premium extruido para perros adultos con carne deshidratada de cerdo iberico",
     "category": "women's clothing",
     "image": "img/perro/AMITY_SP_LOW_GRAIN_IBERIAN_PORK_ADULT_14_KG.png",
-    "rating": {
-      "rate": 2.6,
-      "count": 235
-    }
+    "rating": { "rate": 2.6, "count": 235 }
   },
   {
     "id": 16,
     "title": "Alimento perros adultos  Amity 14Kl ",
     "price": 29.95,
-    "description": "alimento para perros adultos de todas las razas y tamaños formulado con salmón",
+    "description": "alimento para perros adultos de todas las razas y tama\u00f1os formulado con salm\u00f3n",
     "category": "women's clothing",
     "image": "img/perro/AMITY_SP_LOW_GRAIN_SALMON_ADULT_14_KG.png",
-    "rating": {
-      "rate": 2.9,
-      "count": 340
-    }
+    "rating": { "rate": 2.9, "count": 340 }
   },
   {
     "id": 17,
     "title": "Brit Care Junior Large Cordero",
     "price": 39.99,
-    "description": "alimento hipoalergénico de cordero y arroz indicado para perros jóvenes",
+    "description": "alimento hipoalerg\u00e9nico de cordero y arroz indicado para perros j\u00f3venes",
     "category": "women's clothing",
     "image": "img/perro/Brit_care_junior_large_cordero_y_arroz.jpg",
-    "rating": {
-      "rate": 3.8,
-      "count": 679
-    }
+    "rating": { "rate": 3.8, "count": 679 }
   },
   {
     "id": 18,
-    "title": "Alimento húmedo en lata",
+    "title": "Alimento h\u00famedo en lata",
     "price": 9.85,
-    "description": "alimento húmedo en lata indicado para todos los perros",
+    "description": "alimento h\u00famedo en lata indicado para todos los perros",
     "category": "women's clothing",
     "image": "img/perro/brit-mono-protein-turkey.jpg",
-    "rating": {
-      "rate": 4.7,
-      "count": 130
-    }
+    "rating": { "rate": 4.7, "count": 130 }
   },
   {
     "id": 19,
@@ -222,10 +177,7 @@
     "description": "Juguete de perro ",
     "category": "women's clothing",
     "image": "img/perro/camom_pelota_tenis_x_2.png",
-    "rating": {
-      "rate": 4.5,
-      "count": 146
-    }
+    "rating": { "rate": 4.5, "count": 146 }
   },
   {
     "id": 20,
@@ -234,9 +186,6 @@
     "description": "Capa para mascotas confeccionada con tela polar antipilling",
     "category": "women's clothing",
     "image": "img/perro/capa_polar_chiporro.png",
-    "rating": {
-      "rate": 3.6,
-      "count": 145
-    }
+    "rating": { "rate": 3.6, "count": 145 }
   }
 ]
