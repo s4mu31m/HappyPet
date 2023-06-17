@@ -105,6 +105,7 @@ nav {
 
 
 .product {
+  background-image: url(slider-1.jpg);
   height: 738px;
   width: 438px;
   background-color: rgba(244, 244, 244, 0.5);
@@ -333,4 +334,50 @@ label {
   background-color: #ccc;
   border: none;
   cursor: pointer;
+}
+
+
+
+.slider-frame {
+  width: 700px;
+  height: 300px;
+  margin: auto;
+  background-image: url(../img/sliders/slider-5.jpg);
+  background-size: 100% 100%;
+  animation: slide 10s infinite alternate;
+  border: 2px solid #ff914d;
+  
+
+}
+/* 
+.slider-frame ul{
+  display:flex;
+  justify-content: center;
+  padding: 0;
+  width: 95%;
+
+}
+
+.slider-frame li{
+  list-style: none;
+  width: 100%;
+}
+
+.slider-frame img{
+  width: 70%;
+  
+} */
+
+@keyframes slide {
+	0%, 20% {background-image: url(../img/sliders/slider-1.jpg);}
+  
+	
+	25%, 45% {background-image: url(../img/sliders/slider-2.jpg);}
+	
+	
+	50%, 75% {background-image: url(../img/sliders/slider-3.jpg);}
+
+	
+	75%, 100%{background-image: url(../img/sliders/slider-4.jpg);}
+	
 }
