@@ -26,22 +26,21 @@ $productos = json_decode($json);
   <?php require "partials/navbar.php"; ?>
   
     <div class="slider-frame">
-       <!-- <ul>
-        <li><img src="img\slider-5.jpg" alt=""></li>
-        <li><img src="img\slider-2.jpg" alt=""></li>
-        <li><img src="img\slider-3.jpg" alt=""></li>
-        <li><img src="img\slider-4.jpg" alt=""></li>
-      </ul> -->
+  
     </div>
   
 
   <div>
 
     <main class="productos">
+  
       <?php foreach ($productos as $producto): ?>
         <a class="product-link" href="productos.php?id=<?php echo $producto->id; ?>">
+        
           <div class="product">
+        
             <?php
+            
             echo "<h2 class='titulo_producto'>" . $producto->title . "</h2>";
             echo "<img class='imagen_producto' src='" . $producto->image . "' alt='Imagen del producto'>";
             echo "<p class='descripcion_prodcuto'>" . $producto->description . "</p>";

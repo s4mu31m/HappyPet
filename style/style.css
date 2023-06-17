@@ -100,6 +100,7 @@ nav {
   justify-content: center;
   width: 100%;
   gap: 40px;
+  background-image: url(img\perro\ver-producto.png);
   /* Separa cada producto por 40px */
 }
 
@@ -339,45 +340,30 @@ label {
 
 
 .slider-frame {
-  width: 700px;
-  height: 300px;
+  width: 1300px;
+  height: 500px;
   margin: auto;
-  background-image: url(../img/sliders/slider-5.jpg);
+  background-image: url(../img/sliders/sliderperro-prin.jpg);
   background-size: 100% 100%;
-  animation: slide 10s infinite alternate;
-  border: 2px solid #ff914d;
-  
+  animation: slide 20s infinite linear;
+  border: 20px solid #ff914d;
 
 }
-/* 
-.slider-frame ul{
-  display:flex;
-  justify-content: center;
-  padding: 0;
-  width: 95%;
-
-}
-
-.slider-frame li{
-  list-style: none;
-  width: 100%;
-}
-
-.slider-frame img{
-  width: 70%;
-  
-} */
-
 @keyframes slide {
-	0%, 20% {background-image: url(../img/sliders/slider-1.jpg);}
-  
+	0%, 20% {background-image: url(../img/sliders/sliderperro-1.jpg);
+  opacity: 1;
+  }
+ 
 	
-	25%, 45% {background-image: url(../img/sliders/slider-2.jpg);}
-	
-	
-	50%, 75% {background-image: url(../img/sliders/slider-3.jpg);}
+	25%, 35% {background-image: url(../img/sliders/slidergato-2.jpg);
+  opacity: 1;}
 
-	
-	75%, 100%{background-image: url(../img/sliders/slider-4.jpg);}
+
+	50%, 80% {background-image: url(../img/sliders/sliderperro-prin.jpg);
+  opacity: 1;}
+
+	  
+	80%, 100%{background-image: url(../img/sliders/slidergato-4.jpg);
+  opacity: 1;}
 	
 }
