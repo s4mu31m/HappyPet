@@ -1,4 +1,6 @@
 
+/* LOGIN */
+
 body {
   background-image: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
   font-family: Arial, sans-serif;
@@ -128,7 +130,6 @@ nav {
 
 .imagen_producto {
   width: 100%;
-  height: 60%;
   border-radius: 10px;
   margin-bottom: 10px;
   object-fit: scale-down;
@@ -136,11 +137,10 @@ nav {
 
 
 .titulo_producto {
-  width: 50%;
+  width: 50 %;
   color: #333;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 10px;
-  white-space: nowrap;
 }
 
 .descripcion_producto {
@@ -251,6 +251,91 @@ nav {
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .icon-principal, .enlaces {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .enlaces li a {
+    margin-left: 10px;
+  }
+
+  .principal {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .presentacion h1 {
+    font-size: 50px;
+  }
+
+  .presentacion p {
+    font-size: 20px;
+  }
+
+  .redes-img {
+    align-items: center;
+  }
+
+  .redes-img i {
+    padding-left: 0;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .titulo_producto {
+    font-size: 16px;
+  }
+
+  .descripcion_producto {
+    font-size: 12px;
+  }
+
+  .precio_producto {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .enlaces li a {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
+  .presentacion h1 {
+    font-size: 40px;
+  }
+
+  .presentacion p {
+    font-size: 18px;
+  }
+
+  .titulo_producto {
+    font-size: 14px;
+  }
+
+  .descripcion_producto {
+    font-size: 10px;
+  }
+
+  .precio_producto {
+    font-size: 14px;
+  }
+}
+
 
 
 /* PAGINA PRODUCTO */
