@@ -60,7 +60,7 @@ if ($product) {
             <div class="detalles_producto">
                 <h2 class="Description">Descripcion</h2>
                 <?php
-                echo "<p>" . $product['description'] . "</p>";
+                echo "<p>" . $product['resume'] . "</p>";
                 $calificacion = round($product['rating']['rate']);
                 echo "<div class='estrellas'>";
                 for ($i = 1; $i <= 5; $i++) {
