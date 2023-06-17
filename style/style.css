@@ -31,17 +31,26 @@ body {
 
 /* contenedor principal cabezera con un padding de 30px arriba/ abajo y 50px izquierda/derecha*/
 nav {
+  
   display: flex;
-  background-color: #87CEFA;
+  background-color: #ff914d;
   padding: 30px 200px 30px 120px;
   margin-bottom: 30px;
 }
 
 /*contenedor del icono mas su texto*/
-.icon-principal {
+.icon-principal  {    
   width: 50%;
   display: flex;
   justify-content: flex-start;
+}
+.bien{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-family: 'Krub', sans-serif;
+
 }
 
 .icon-principal span {
@@ -254,6 +263,8 @@ nav {
 /* PAGINA PRODUCTO */
 
 .productos-pag {
+  
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -262,12 +273,13 @@ nav {
   border: 2px solid #ccc;
   padding: 20px;
   border-radius: 60px 57px 57px 57px;
-  box-shadow: 3px 8px 83px 24px rgba(138,131,138,1);
+  box-shadow: 3px 8px 80px 24px rgba(138,131,138,1);
+
 
 }
 .product-pag {
   position: relative;
-  left: 200px;
+  left: 85px;
   
   flex-direction: column;
   align-items: center;
@@ -293,13 +305,19 @@ nav {
 }
 
 .titulo_producto-pag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 40px;
   margin-bottom: 20px;
-  padding: 85px;
+  padding: 75px;
 }
 
 .imagen_producto-pag {
-  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
   height: auto;
   margin-bottom: 10px;
 }
@@ -310,10 +328,6 @@ nav {
 .precio_producto-pag{
   font-weight: bold;
 }
-
-
-
-
 
 #comentarios-pag {
   margin-bottom:20px;
