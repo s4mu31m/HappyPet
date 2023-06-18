@@ -1,8 +1,6 @@
 <?php
 
-
 session_start();
-
 
 // Leer el archivo JSON
 $json = file_get_contents('api.json');
@@ -10,37 +8,30 @@ $json = file_get_contents('api.json');
 // Decodificar el JSON a un array de objetos PHP
 $productos = json_decode($json);
 
+require "../partials/header.php";
 
 ?>
 
-
-
-
-
-<?php require "./partials/header.php"; ?>
-
-
-
 <body>
 
-  <?php require "partials/navbar.php"; ?>
-  
-    <div class="slider-frame">
-  
-    </div>
-  
+  <?php require "../partials/navbar.php"; ?>
+
+  <div class="slider-frame">
+
+  </div>
+
 
   <div>
 
     <main class="productos">
-  
-      <?php foreach ($productos as $producto): ?>
+
+      <?php foreach ($productos as $producto) : ?>
         <a class="product-link" href="productos.php?id=<?php echo $producto->id; ?>">
-        
+
           <div class="product">
-        
+
             <?php
-            
+
             echo "<h2 class='titulo_producto'>" . $producto->title . "</h2>";
             echo "<img class='imagen_producto' src='" . $producto->image . "' alt='Imagen del producto'>";
             echo "<p class='descripcion_prodcuto'>" . $producto->description . "</p>";
@@ -65,5 +56,4 @@ $productos = json_decode($json);
 
   </div>
 
-
-  <?php require "./partials/footer.php"; ?>
+  <?php require "../partials/footer.php"; ?>
