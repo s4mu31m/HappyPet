@@ -59,9 +59,9 @@ if ($product) {
 
             <div class="detalles_producto">
                 <?php echo "<h1 class ='titulo_producto-pag'>" . $product['title'] . "</h1>"; ?>
-                <?php echo "<p class = 'precio_producto-pag'>Precio: $" . $product['price'] . "</p>"; ?>
+                <?php echo "<p>" . $product['resume'] . "</p>"; ?>
                 <?php
-                echo "<p>" . $product['resume'] . "</p>";
+                echo "<p class = 'precio_producto-pag'>Precio: $" . $product['price'] . "</p>"; 
                 $calificacion = round($product['rating']['rate']);
                 echo "<div class='estrellas'>";
                 for ($i = 1; $i <= 5; $i++) {

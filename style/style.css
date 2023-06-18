@@ -146,7 +146,7 @@ nav {
 
 
 .titulo_producto {
-  width: 50 %;
+  width: 50%;
   color: #333;
   font-size: 20px;
   margin-bottom: 10px;
@@ -374,8 +374,9 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  right: 150px;  
   align-items: center;
+  gap: 10px;
+  right: 150px;  
   border: 2px solid #000; /* Esto añade un borde de 2px de grosor y de color negro */
   border-radius: 15px;
   width: 600px;
@@ -383,35 +384,26 @@ nav {
   
 }
 .comments{
-
   width: 100%;
   border-top: 2px solid #000;
 }
 
 .titulo_producto-pag {
-  display: flex;
-  justify-content: start;
-  align-items: center;
   font-size: 35px;
   margin-bottom: 20px;
   padding: 7px;
 }
 
 .imagen_producto-pag {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
 }
 
 .descripcion_producto-pag{
-  
   margin-bottom: 10px;
 }
 .precio_producto-pag{
-  margin-bottom: auto;
   font-size: 35px;
   font-weight: bold;
 }
