@@ -3,7 +3,7 @@
 require_once '../vendor/autoload.php';
 require_once '../secrets.php';
 
-\Stripe\Stripe::setApiKey($stripeSecretKey);
+\Stripe\Stripe::setApiKey($stripeWebhookSigningSecret);
 
 $payload = @file_get_contents('php://input');
 $event = null;

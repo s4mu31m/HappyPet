@@ -19,7 +19,7 @@ require_once '../secrets.php';
 \Stripe\Stripe::setApiKey($stripeSecretKey);
 header('Content-Type: application/json');
 
-$YOUR_DOMAIN = 'http://localhost:4242';
+$YOUR_DOMAIN = 'http://qa.happypet.uno';
 
 $checkout_session = \Stripe\Checkout\Session::create([
   'line_items' => [[

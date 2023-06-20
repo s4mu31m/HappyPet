@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require "../partials/header.php";
 require "../partials/navbar.php";
 
@@ -78,6 +78,10 @@ if ($product) {
                     <input type="hidden" name="product_id" value="<?php echo $id; ?>">
                     <button type="submit" id="checkout-button" class="button-orange">Pagar!</button>
                 </form>
+                <form action="wishlist.php" method="POST">
+                    <input type="hidden" name="product_id" value="<?php echo $id; ?>">
+                    <button type="submit" class="button-orange">Agregar a la lista de deseos</button>
+                </form>
             </div>
             <div class="comments">
                 <h2>Comentarios</h2>
@@ -91,7 +95,7 @@ if ($product) {
                     <textarea id="mensaje" required></textarea><br>
                     <button type="submit">Enviar comentario</button>
                 </form>
-                
+
             </div>
         </main>
     <?php
