@@ -3,8 +3,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <div class="icon-principal">
-        <img src="img\logo3.png" style="width:40%;" />
-        <h1 class="bien">Bienvienido</h1>
+        <img src="img\logonav.png" style="width:60%;" />
+        
     </div>
     <!-- si la sesion esta iniciada, mostrará el correo del Usuario -->
     <?php if (isset($_SESSION["user"])) : ?>
