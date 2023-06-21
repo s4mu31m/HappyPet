@@ -102,29 +102,32 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  gap: 40px;
+  gap: 10px;
   /* Separa cada producto por 40px */
 }
 
 
 .product {
   height: 450px;
-  width: auto;
+  width: 350px;
   background-color: rgba(244, 244, 244, 0.5);
   border-radius: 10px;
   border: 1px solid #000000;
   padding: 20px;
-  margin: 20px;
+  margin: 3px 1px 1px 2px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .product-link {
-  height: 738px;
-  width: 438px;
+  height: 450px;
+  width: auto;
   text-decoration: none;
   color: inherit;
   display: flex;
-  flex-grow: 1;
+  flex-grow: 3;
+  
+  padding: 20px 20px 20px 20px;
+  
 }
 
 .imagen_producto {
