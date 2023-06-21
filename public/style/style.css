@@ -1,4 +1,6 @@
 
+
+
 body {
   background-image: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
   font-family: Arial, sans-serif;
@@ -34,16 +36,24 @@ nav {
   
   display: flex;
   background-color: #ff914d;
-  padding: 10px 200px 10px 200px;
+  padding: 3px 200px 3px 150px;
   margin-bottom: 30px;
 }
 
 /*contenedor del icono mas su texto*/
 .icon-principal  {    
-  width: 80%;
+  width: 100%;
   height: auto;
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
+}
+.bien{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-family: 'Krub', sans-serif;
+
 }
 
 .icon-principal span {
@@ -51,13 +61,17 @@ nav {
 }
 
 /*contenedor de los enlaces*/
-.enlaces {  
+.enlaces { 
   display: flex;
   justify-content: flex-end;
   width: 100%;
   padding-top: 5%;
   margin: 0;
   list-style: none;
+}
+
+.navbar-toggler {
+  display: none;
 }
 
 /*todos las listas del contenedor enlace tienen un margen a la izquierda de 15px*/
@@ -68,7 +82,12 @@ nav {
   text-decoration: none;
   margin-left: 50px;
   font-size: 30px;
-
+}
+/*cambio de color al nav al pasar el cursor*/
+.enlaces li a:hover{
+  background-color: #e9eaed;
+  color: var(--oscuro);
+  border-radius: 10%; 
 }
 
 /*Contenido principal de la pagina*/
@@ -102,14 +121,16 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  gap: 10px;
+  gap: 40px;
+  background-image: url(img\perro\ver-producto.png);
   /* Separa cada producto por 40px */
 }
 
 
 .product {
-  height: 450px;
-  width: 350px;
+  background-image: url(slider-1.jpg);
+  height: 738px;
+  width: 438px;
   background-color: rgba(244, 244, 244, 0.5);
   border-radius: 10px;
   border: 1px solid #000000;
@@ -132,7 +153,6 @@ nav {
 
 .imagen_producto {
   width: 100%;
-  height: 60%;
   border-radius: 10px;
   margin-bottom: 10px;
   object-fit: scale-down;
@@ -142,9 +162,8 @@ nav {
 .titulo_producto {
   width: 50%;
   color: #333;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 10px;
-  white-space: nowrap;
 }
 
 .descripcion_producto {
@@ -171,90 +190,9 @@ nav {
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 768px) {
 
-  nav {
-    flex-direction: column;
-    padding: 20px;
-  }
 
-  .icon-principal,
-  .enlaces {
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
 
-  .enlaces li a {
-    margin-left: 10px;
-  }
-
-  .principal {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .presentacion h1 {
-    font-size: 50px;
-  }
-
-  .presentacion p {
-    font-size: 20px;
-  }
-
-  .redes-img {
-    align-items: center;
-  }
-
-  .redes-img i {
-    padding-left: 0;
-  }
-
-  .product {
-    width: 100%;
-  }
-
-  .titulo_producto {
-    font-size: 16px;
-  }
-
-  .descripcion_producto {
-    font-size: 12px;
-  }
-
-  .precio_producto {
-    font-size: 16px;
-  }
-
-}
-
-@media screen and (max-width: 480px) {
-
-  .enlaces li a {
-    margin-left: 10px;
-    font-size: 18px;
-  }
-
-  .presentacion h1 {
-    font-size: 40px;
-  }
-
-  .presentacion p {
-    font-size: 18px;
-  }
-
-  .titulo_producto {
-    font-size: 14px;
-  }
-
-  .descripcion_producto {
-    font-size: 10px;
-  }
-
-  .precio_producto {
-    font-size: 14px;
-  }
-}
 
 
 /* PAGINA PRODUCTO */
@@ -284,8 +222,9 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  right: 150px;  
   align-items: center;
+  gap: 10px;
+  right: 150px;  
   border: 2px solid #000; /* Esto añade un borde de 2px de grosor y de color negro */
   border-radius: 15px;
   width: 600px;
@@ -293,35 +232,26 @@ nav {
   
 }
 .comments{
-
   width: 100%;
   border-top: 2px solid #000;
 }
 
 .titulo_producto-pag {
-  display: flex;
-  justify-content: start;
-  align-items: center;
   font-size: 35px;
   margin-bottom: 20px;
   padding: 7px;
 }
 
 .imagen_producto-pag {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
 }
 
 .descripcion_producto-pag{
-  
   margin-bottom: 10px;
 }
 .precio_producto-pag{
-  margin-bottom: auto;
   font-size: 35px;
   font-weight: bold;
 }
@@ -346,3 +276,48 @@ label {
   border: none;
   cursor: pointer;
 }
+
+.button-orange {
+  background-color: #ff914d;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+.slider-frame {
+  width: 1300px;
+  height: 500px;
+  margin: auto;
+  background-image: url(../img/sliders/sliderperro-prin.jpg);
+  background-size: 100% 100%;
+  animation: slide 20s infinite linear;
+  border: 20px solid #ff914d;
+
+}
+@keyframes slide {
+	0%, 20% {background-image: url(../img/sliders/sliderperro-1.jpg);
+  opacity: 1;
+  }
+ 
+	
+	25%, 35% {background-image: url(../img/sliders/slidergato-2.jpg);
+  opacity: 1;}
+
+
+	50%, 80% {background-image: url(../img/sliders/sliderperro-prin.jpg);
+  opacity: 1;}
+
+	  
+	80%, 100%{background-image: url(../img/sliders/slidergato-4.jpg);
+  opacity: 1;}
+	
+}
+
