@@ -1,7 +1,7 @@
 <?php
-
-require "partials/header.php";
-require "partials/navbar.php";
+session_start();
+require "../partials/header.php";
+require "../partials/navbar.php";
 
 $id = $_GET['id']; // Obtiene el ID del producto del parámetro GET
 
@@ -50,18 +50,18 @@ if ($product) {
         <main class="productos-pag">
             <div class="product-pag">
                 <?php
-                
+
                 echo "<img class='imagen_producto-pag' src='" . $product['image'] . "'alt='Imagen del producto'>";
-               
+
                 ?>
 
             </div>
 
             <div class="detalles_producto">
                 <?php echo "<h1 class ='titulo_producto-pag'>" . $product['title'] . "</h1>"; ?>
-                <?php echo "<p class = 'precio_producto-pag'>Precio: $" . $product['price'] . "</p>"; ?>
+                <?php echo "<p>" . $product['resume'] . "</p>"; ?>
                 <?php
-                echo "<p>" . $product['resume'] . "</p>";
+                echo "<p class = 'precio_producto-pag'>Precio: " . $product['price'] . "</p>";
                 $calificacion = round($product['rating']['rate']);
                 echo "<div class='estrellas'>";
                 for ($i = 1; $i <= 5; $i++) {
@@ -74,6 +74,14 @@ if ($product) {
                 }
                 echo "</div>";
                 ?>
+                <form action="checkout.php" method="POST">
+                    <input type="hidden" name="product_id" value="<?php echo $id; ?>">
+                    <button type="submit" id="checkout-button" class="button-orange">Pagar!</button>
+                </form>
+                <form action="wishlist.php" method="POST">
+                    <input type="hidden" name="product_id" value="<?php echo $id; ?>">
+                    <button type="submit" class="button-orange">Agregar a la lista de deseos</button>
+                </form>
             </div>
             <div class="comments">
                 <h2>Comentarios</h2>
@@ -87,6 +95,7 @@ if ($product) {
                     <textarea id="mensaje" required></textarea><br>
                     <button type="submit">Enviar comentario</button>
                 </form>
+
             </div>
         </main>
     <?php
@@ -96,6 +105,6 @@ if ($product) {
     echo "<p>Producto no encontrado.</p>";
 }
 
-require "partials/footer.php";
+require "../partials/footer.php";
 
     ?>

@@ -1,6 +1,6 @@
 <?php
 
-require "database.php";
+require "../database.php";
 
 $error = null;
 
