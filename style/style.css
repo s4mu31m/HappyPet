@@ -34,23 +34,16 @@ nav {
   
   display: flex;
   background-color: #ff914d;
-  padding: 30px 200px 30px 120px;
+  padding: 10px 200px 10px 200px;
   margin-bottom: 30px;
 }
 
 /*contenedor del icono mas su texto*/
 .icon-principal  {    
-  width: 50%;
+  width: 80%;
+  height: auto;
   display: flex;
-  justify-content: flex-start;
-}
-.bien{
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  font-family: 'Krub', sans-serif;
-
+  justify-content: left;
 }
 
 .icon-principal span {
@@ -58,7 +51,7 @@ nav {
 }
 
 /*contenedor de los enlaces*/
-.enlaces {
+.enlaces {  
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -70,10 +63,11 @@ nav {
 /*todos las listas del contenedor enlace tienen un margen a la izquierda de 15px*/
 
 .enlaces li a {
+  font-family: cursive;
   color: whitesmoke;
   text-decoration: none;
   margin-left: 50px;
-  font-size: 22px;
+  font-size: 30px;
 
 }
 
@@ -114,8 +108,8 @@ nav {
 
 
 .product {
-  height: 738px;
-  width: 438px;
+  height: 450px;
+  width: auto;
   background-color: rgba(244, 244, 244, 0.5);
   border-radius: 10px;
   border: 1px solid #000000;
