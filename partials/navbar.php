@@ -3,7 +3,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <div class="icon-principal">
-        <img src="img\logonav.png" style="width:60%;" />
+        <img src="img\logonav.png" style="width:45%;" />
         
     </div>
     <!-- si la sesion esta iniciada, mostrará el correo del Usuario -->
