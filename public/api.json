@@ -7,7 +7,7 @@
     "description": "BRAVERY SALMON ADULT CAT",
     "resume": " comida bravery para gatos  sabor salmon 0 grasas saturadas y 100% natural sabor a salmon solo para gatos premiun donde a su gato se le pondra bello y sedoso el pelo donde tambien se le caera menos el pelo compralo se agota rapido     ",
     "category": "men's clothing",
-    "image": "public/img/gato/BRAVERY SALMON ADULT CAT.jpg",
+    "image": "../img/gato/BRAVERY SALMON ADULT CAT.jpg",
     "comments": [{ "nombre": "sam", "mensaje": "slakddflrj" }],
     "rating": { "rate": 3.9, "count": 120 }
   },
