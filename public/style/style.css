@@ -126,7 +126,7 @@ nav {
   /* Separa cada producto por 40px */
 }
 
-
+/* Listado de productos en los box */
 .product {
   background-image: url(slider-1.jpg);
   height: 450px;
@@ -149,7 +149,7 @@ nav {
   padding: 20px 20px 20px 20px;
   
 }
-
+/* imagenes de los productos  */
 .imagen_producto {
   width: 100%;
   border-radius: 10px;
@@ -179,11 +179,14 @@ nav {
 }
 
 /*footer*/
-.footer {
+footer {
+  height: 100px;
+  width: 100%;
   background-color: #000;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+  color: #fff; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
