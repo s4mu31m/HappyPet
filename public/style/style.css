@@ -126,7 +126,7 @@ nav {
   /* Separa cada producto por 40px */
 }
 
-/* Listado de productos en los box */
+/* define propiedades de tarjeta del  producto */
 .product {
   background-image: url(slider-1.jpg);
   height: 450px;
@@ -137,19 +137,18 @@ nav {
   padding: 20px;  
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-
+/* define propiedades de tarjeta del  producto */
 .product-link {
   height: 450px;
   width: auto;
   text-decoration: none;
   color: inherit;
   display: flex;
-  flex-grow: 3;
-  
+  flex-grow: 3;  
   padding: 20px 20px 20px 20px;
   
 }
-/* imagenes de los productos  */
+/* define propiedades de tarjeta del  producto */
 .imagen_producto {
   width: 100%;
   border-radius: 10px;
@@ -157,20 +156,20 @@ nav {
   object-fit: scale-down;
 }
 
-
+/* define propiedades de tarjeta del  producto */
 .titulo_producto {
   width: 50%;
   color: #333;
   font-size: 20px;
   margin-bottom: 10px;
 }
-
+/* define propiedades de tarjeta del  producto */
 .descripcion_producto {
   color: rgb(133, 133, 133);
   font-size: 14px;
   line-height: 1.5;
 }
-
+/* define propiedades de tarjeta del  producto */
 .precio_producto {
   color: #ff3700;
   font-size: 18px;
@@ -179,7 +178,7 @@ nav {
 }
 
 /*footer*/
-footer {
+.footer {
   height: 100px;
   width: 100%;
   background-color: #000;
