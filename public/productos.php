@@ -89,7 +89,7 @@ if ($product) {
                 <h3>Agregar comentario</h3>
                 <form id="Formulario" onsubmit="agregarComentario(event)">
                     <input type="hidden" id="id_producto" value="<?php echo $id; ?>">
-                    <label for="nombre">Nombre</label>
+                    <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" required> <br>
                     <label for="mensaje">Mensaje:</label><br>
                     <textarea id="mensaje" required></textarea><br>
