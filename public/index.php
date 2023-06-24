@@ -1,9 +1,7 @@
 <?php
 
 session_start();
-$vendor = require_once '..\vendor\autoload.php';
-var_dump($vendor);
-die();
+
 
 // Leer el archivo JSON
 $json = file_get_contents('api.json');
