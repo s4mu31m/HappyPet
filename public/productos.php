@@ -76,15 +76,15 @@ if ($product) {
                 ?>
                 <form action="checkout.php" method="POST">
                     <input type="hidden" name="product_id" value="<?php echo $id; ?>">
-                    <button type="submit" id="checkout-button" class="button-orange">Pagar!</button>
+                    <button type="submit" id="checkout-button" class="button-orange">Comprar!</button>
                 </form>
                 <form action="wishlist.php" method="POST">
                     <input type="hidden" name="product_id" value="<?php echo $id; ?>">
                     <button type="submit" class="button-orange">Agregar a la lista de deseos</button>
+                    <button type="submit" class="button-orange">Agregar al carrito de compra</button>
                 </form>
             </div>
-            <div class="comments">
-                <h2>Comentarios</h2>
+            <div class="comments">                
                 <div id="comentarios"></div>
                 <h3>Agregar comentario</h3>
                 <form id="Formulario" onsubmit="agregarComentario(event)">

@@ -47,14 +47,6 @@ nav {
   display: flex;
   justify-content: flex-start;
 }
-.bien{
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  font-family: 'Krub', sans-serif;
-
-}
 
 .icon-principal span {
   font-size: 22px;
@@ -80,22 +72,20 @@ nav {
   font-family: cursive;
   color: whitesmoke;  
   margin-left: 50px;
-  font-size: 28px;
+  font-size: 25px;
   margin-bottom: 50px;
   text-decoration: none;
+  padding-bottom: 30px;  
 }
 /*cambio de color al nav al pasar el cursor*/
 .enlaces li a:hover{
   font-family: cursive;
-  color: whitesmoke;
-  text-decoration: none;
-  margin-left: 50px;
-  font-size: 30px;
+  color: whitesmoke;  
+  margin-left: 50px;  
+  font-size: 25px;  
   margin-bottom: 50px;
   text-decoration: underline;
   text-decoration-color: #000; 
-  line-height: 20px;
-  position: relative;
 }
 
 /*Contenido principal de la pagina*/
@@ -146,8 +136,7 @@ nav {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 /* define propiedades de tarjeta del  producto */
-.product-link {
-  height: 450px;
+.product-link {  
   width: auto;
   text-decoration: none;
   color: inherit;
@@ -219,7 +208,7 @@ footer {
   border: 2px solid #ccc;
   padding: 20px;
   border-radius: 60px 57px 57px 57px;
-  box-shadow: 3px 8px 80px 24px rgba(138,131,138,1);
+  box-shadow: 8px 8px 12px 8px rgba(138,131,138,1);
 
 }
 .product-pag {
@@ -240,18 +229,55 @@ footer {
   border: 2px solid #000; /* Esto añade un borde de 2px de grosor y de color negro */
   border-radius: 15px;
   width: 600px;
-  min-height: 700px;
-  
+  min-height: 700px;  
 }
+
+.detalles_producto p{
+  display: flex;
+  margin: 10px 10px 10px 10px;
+}
+/* comentarios  */
 .comments{  
+  padding-top: 20px;
   width: 100%;
   border-top: 2px solid #000;
   display: flex;  
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: start;
+  padding-left: 250px;
+  
 }
-
+/* label de los comentarios  */
+.comments label{
+  font-size: 20px;
+  display: flex;
+}
+/* input de los comentarios  */
+.comments input{
+  height: 30px;
+  width: 400px;
+  
+}
+/* textos de los  comentarios  */
+.comments textarea{
+  height: 85px;
+  width: 600px;  
+}
+/* boton de los comentarios  */
+.comments button{
+  background-color: #ff914d; 
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  border-color: #000;
+}
 .titulo_producto-pag {
   font-size: 35px;
   margin-bottom: 20px;
@@ -259,9 +285,11 @@ footer {
 }
 
 .imagen_producto-pag {
-  max-width: 100%;
+  display: flex;
+  align-items: center;
+  width: 450px;
   height: auto;
-  margin-bottom: 10px;
+  
 }
 
 .descripcion_producto-pag{
@@ -282,9 +310,7 @@ footer {
   margin-bottom: 5px;
   display: flex;    
 }
-label {  
-  margin-bottom: 5px;
-}
+
 .textarea-pag {
   width: 70%;
   padding: 5px 10px;
@@ -292,7 +318,7 @@ label {
   border: none;
   cursor: pointer;
 }
-
+/* botone de los productos */
 .button-orange {
   background-color: #ff914d;
   border: none;
@@ -300,11 +326,14 @@ label {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 4px;
+}
+form{
+  padding-bottom: 30px;
 }
 
 
