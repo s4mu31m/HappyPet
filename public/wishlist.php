@@ -40,6 +40,6 @@ function addToWishlist($userId, $productId) {
     $stmt = null;
     $conn = null;
   }
-  
+  header("Location: listaDeseos.php");
 ?>
 
