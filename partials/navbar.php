@@ -12,7 +12,7 @@
             <li><a href="index.php">Inicio</a></li>
             <li> <a href="">Productos</a></li>
             <li> <a href="listaDeseos.php">Favoritos</a></li>
-            <li> <a href=""><i class="fa-sharp fa-solid fa-cart-shopping fa-xl"></i></a></li>
+            <li> <a href="carrito.php"><i class="fa-sharp fa-solid fa-cart-shopping fa-xl"></i></a></li>
             <li> <a href=""><?= $_SESSION["user"]["email"] ?></a></li>
             <li> <a href="logout.php"><i class="fa-solid fa-right-to-bracket fa-xl" style="color: #ffffff;"></i></a></li>
         </ul>
@@ -22,7 +22,7 @@
             <li><a href="index.php">Inicio</a></li>
             <li> <a href="">Productos</a></li>
             <li> <a href="listaDeseos.php">Favoritos</a></li>
-            <li> <a href=""><i class="fa-sharp fa-solid fa-cart-shopping fa-xl"></i></a></li>
+            <li> <a href="carrito.php"><i class="fa-sharp fa-solid fa-cart-shopping fa-xl"></i></a></li>
             <li> <a href="login.php"><i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i></a></a></li>
         </ul>
     <?php endif ?>

@@ -80,8 +80,11 @@ if ($product) {
                 </form>
                 <form action="wishlist.php" method="POST">
                     <input type="hidden" name="product_id" value="<?php echo $id; ?>">
-                    <button type="submit" class="button-orange">Agregar a la lista de deseos</button>
-                    <button type="submit" class="button-orange">Agregar al carrito de compra</button>
+                    <button type="submit" name="wishlist" class="button-orange">Agregar a la lista de deseos</button>
+                </form>
+                <form action="carrito.php" method="POST">
+                    <input type="hidden" name="product_id" value="<?php echo $id; ?>">
+                    <button type="submit" name="cart" class="button-orange">Agregar al carrito de compra</button>
                 </form>
             </div>
             <div class="comments">                
