@@ -231,6 +231,9 @@ footer {
   width: 600px;
   min-height: 700px;  
 }
+.detalles_producto form{
+  display: flex;
+}
 
 .detalles_producto p{
   display: flex;
