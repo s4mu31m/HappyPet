@@ -1,0 +1,328 @@
+/* contenedor principal cabezera con un padding de 30px arriba/ abajo y 50px izquierda/derecha*/
+
+  @media only screen and (min-width: 1024px) {
+    /* Estilos para pantallas de PC */
+    nav {
+  
+        display: flex;
+        background-color: #ff914d;
+        padding: 3px 200px 3px 150px;
+        margin-bottom: 25px;
+      }
+
+      .abrir-menu{
+        display:none;
+      }
+  
+      /*contenedor del icono mas su texto*/
+      .icon-principal  {    
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+      }
+      
+      .icon-principal span {
+        font-size: 22px;
+      }
+      
+      /*contenedor de los enlaces*/
+      .enlaces { 
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding-top: 5%;
+        margin: 0;
+        list-style: none;
+      }
+      .navbar-toggler {
+        display: none;
+      }
+      
+      /*todos las listas del contenedor enlace tienen un margen a la izquierda de 15px*/
+      
+      .enlaces li a {
+        font-family: cursive;
+        color: whitesmoke;  
+        margin-left: 50px;
+        font-size: 25px;
+        margin-bottom: 50px;
+        text-decoration: none;
+        padding-bottom: 30px;  
+      }
+      /*cambio de color al nav al pasar el cursor*/
+      .enlaces li a:hover{
+        font-family: cursive;
+        color: whitesmoke;  
+        margin-left: 50px;  
+        font-size: 25px;  
+        margin-bottom: 50px;
+        text-decoration: underline;
+        text-decoration-color: #000; 
+      }
+      
+      /*Contenido principal de la pagina*/
+      .principal {
+        padding: 35px 90px 35px 150px;
+        display: flex
+      }
+      
+      .presentacion h1 {
+        margin-top: 0;
+        font-size: 70px;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      
+      
+      .presentacion p {
+        font-size: 25px;
+      }
+      
+      .btn btn-light {
+        border-radius: 50px;
+        margin-left: 20px;
+        padding: 0;
+      
+      }    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablets */
+    nav {
+        display: flex;
+        background-color: #ff914d;
+        padding: 3px 30px 3px 30px;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+
+    .abrir-menu{
+        display:block;
+      }
+
+    .slider-frame {
+      display: none;  
+   }
+
+
+   .enlaces{
+    display: none;
+   }
+
+
+    /*contenedor del icono mas su texto*/
+    .icon-principal  {    
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .icon-principal span {
+        font-size: 22px;
+    }
+      
+    .navbar-toggler {
+        display: none;
+    }
+      
+    /*todos las listas del contenedor enlace tienen un margen a la izquierda de 15px*/
+      
+    .enlaces li a {
+        font-family: cursive;
+        color: whitesmoke;  
+        margin-left: 50px;
+        font-size: 25px;
+        margin-bottom: 50px;
+        text-decoration: none;
+        padding-bottom: 30px;  
+    }
+
+    /*cambio de color al nav al pasar el cursor*/
+    .enlaces li a:hover{
+        font-family: cursive;
+        color: whitesmoke;  
+        margin-left: 50px;  
+        font-size: 25px;  
+        margin-bottom: 50px;
+        text-decoration: underline;
+        text-decoration-color: #000; 
+      }
+      
+      /*Contenido principal de la pagina*/
+      .principal {
+        padding: 35px 90px 35px 150px;
+        display: flex
+      }
+      
+      .presentacion h1 {
+        margin-top: 0;
+        font-size: 70px;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      
+      
+      .presentacion p {
+        font-size: 25px;
+      }
+      
+      .btn btn-light {
+        border-radius: 50px;
+        margin-left: 20px;
+        padding: 0;
+      
+      }    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media only screen and (max-width: 767px) {
+    /* Estilos para teléfonos móviles */
+    nav {
+  
+        display: flex;
+        background-color: #ff914d;
+        padding: 3px 30px 3px 30px;
+        margin-bottom: 25px;
+      }
+
+      .abrir-menu{
+        display:block;
+      }
+
+      .slider-frame {
+        display: none;  
+     }
+
+     .enlaces{
+      display: none;
+     }
+
+    .enlaces li {
+      text-decoration: none;  
+    }
+
+      
+      /*contenedor del icono mas su texto*/
+      .icon-principal  {    
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+      }
+      
+      .icon-principal span {
+        font-size: 22px;
+      }
+      
+     
+      
+      .navbar-toggler {
+        display: none;
+      }
+      
+      /*todos las listas del contenedor enlace tienen un margen a la izquierda de 15px*/
+      
+      .enlaces li a {
+        font-family: cursive;
+        color: whitesmoke;  
+        margin-left: 50px;
+        font-size: 25px;
+        margin-bottom: 50px;
+        text-decoration: none;
+        padding-bottom: 30px;  
+      }
+      /*cambio de color al nav al pasar el cursor*/
+      .enlaces li a:hover{
+        font-family: cursive;
+        color: whitesmoke;  
+        margin-left: 50px;  
+        font-size: 25px;  
+        margin-bottom: 50px;
+        text-decoration: underline;
+        text-decoration-color: #000; 
+      }
+      
+      /*Contenido principal de la pagina*/
+      .principal {
+        padding: 35px 90px 35px 150px;
+        display: flex
+      }
+      
+      .presentacion h1 {
+        margin-top: 0;
+        font-size: 70px;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      
+      
+      .presentacion p {
+        font-size: 25px;
+      }
+      
+      .btn btn-light {
+        border-radius: 50px;
+        margin-left: 20px;
+        padding: 0;
+      
+      }    
+  }
+
+
+ 
