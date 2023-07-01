@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style/style.css" />
+  <link rel="icon" type="image/png" href="img\iconopagina.png">
   <link rel="stylesheet" href="style/navbar.css" />
-  <!-- <link rel="stylesheet" href="style/navbar.css"> -->
+
   <title>Happy pet</title>
 
   <script src="https://kit.fontawesome.com/2a85519d20.js" crossorigin="anonymous"></script>
