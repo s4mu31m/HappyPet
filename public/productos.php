@@ -19,6 +19,7 @@ foreach ($products as $p) {
 
 if ($product) {
 ?>
+    <link rel="stylesheet" href="style/productos.css" />
 
     <body>
         <script>
@@ -84,7 +85,7 @@ if ($product) {
                     <button type="submit" class="button-orange">Agregar al carrito de compra</button>
                 </form>
             </div>
-            <div class="comments">                
+            <div class="comments">
                 <div id="comentarios"></div>
                 <h3>Agregar comentario</h3>
                 <form id="Formulario" onsubmit="agregarComentario(event)">
