@@ -20,7 +20,7 @@ foreach ($products as $p) {
 \Stripe\Stripe::setApiKey($stripeSecretKey);
 header('Content-Type: application/json');
 
-$YOUR_DOMAIN = 'http://localhost/happypet/';
+$YOUR_DOMAIN = 'http://qa.happypet.uno';
 
 $checkout_session = \Stripe\Checkout\Session::create([
   'line_items' => [[

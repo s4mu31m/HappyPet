@@ -4,3 +4,4 @@
 
 // This is your test secret API key.
 $stripeSecretKey = 'sk_test_51NKDGdEsVgU4DuOsZRWha5Hcv0XNFQ2Q6FuOe7mJHaehnLvmAMu9BI56mTtgW5Z5OqiCSAubaMYfPtC2rrwSYjxr00HbHyFOtD';
+$stripeWebhookSigningSecret = 'whsec_jYemwGaXmMiMsbvmMxpHHDwAMRNohphx';

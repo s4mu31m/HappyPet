@@ -1,6 +1,6 @@
 <?php
 
-require "database.php";
+require "../database.php";
 
 $error = null;
 
@@ -68,9 +68,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <?php endif ?>
       </div>
       <div class="tienes">
-        <p style="display: inline-block;margin-right:15px;">No tienes una cuenta? </p><a style="text-decoration: none;" href="register.php">Crea una cuenta</a>
+        <p style="display: inline-block;margin-right:15px;">No tienes una cuenta? </p><a style="text-decoration: none;" href="/register.php">Crea una cuenta</a>
 
       </div>
     </form>
   </div> 
-<?php require "./partials/header.php" ?>
