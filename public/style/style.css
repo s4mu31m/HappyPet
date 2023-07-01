@@ -1,0 +1,389 @@
+
+
+
+body {
+  background-image: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+
+.estrellas {
+  display: flex;
+
+}
+
+.estrellas span {
+  display: inline-block;
+  position: relative;
+  padding-right: 2px;
+  margin: 0 10px;
+  /* Agrega margen alrededor de cada estrella */
+}
+
+.estrellas span::before {
+  content: "☆";
+
+}
+
+.estrellas span.completa::before {
+  content: "★";
+}
+
+/* contenedor principal cabezera con un padding de 30px arriba/ abajo y 50px izquierda/derecha*/
+nav {
+  
+  display: flex;
+  background-color: #ff914d;
+  padding: 3px 200px 3px 150px;
+  margin-bottom: 25px;
+}
+
+/*contenedor del icono mas su texto*/
+.icon-principal  {    
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.icon-principal span {
+  font-size: 22px;
+}
+
+/*contenedor de los enlaces*/
+.enlaces { 
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-top: 5%;
+  margin: 0;
+  list-style: none;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+/*todos las listas del contenedor enlace tienen un margen a la izquierda de 15px*/
+
+.enlaces li a {
+  font-family: cursive;
+  color: whitesmoke;  
+  margin-left: 50px;
+  font-size: 25px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  padding-bottom: 30px;  
+}
+/*cambio de color al nav al pasar el cursor*/
+.enlaces li a:hover{
+  font-family: cursive;
+  color: whitesmoke;  
+  margin-left: 50px;  
+  font-size: 25px;  
+  margin-bottom: 50px;
+  text-decoration: underline;
+  text-decoration-color: #000; 
+}
+
+/*Contenido principal de la pagina*/
+.principal {
+  padding: 35px 90px 35px 150px;
+  display: flex
+}
+
+.presentacion h1 {
+  margin-top: 0;
+  font-size: 70px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+
+.presentacion p {
+  font-size: 25px;
+}
+
+.btn btn-light {
+  border-radius: 50px;
+  margin-left: 20px;
+  padding: 0;
+
+}
+
+/* Listado de productos */
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+  background-image: url(img\perro\ver-producto.png);
+  /* Separa cada producto por 40px */
+}
+
+/* define propiedades de tarjeta del  producto */
+.product {
+  background-image: url(slider-1.jpg);
+  height: 450px;
+  width: 350px;
+  background-color: rgba(244, 244, 244, 0.5);
+  border-radius: 10px;
+  border: 1px solid #000000;
+  padding: 20px;  
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+/* define propiedades de tarjeta del  producto */
+.product-link {  
+  width: auto;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-grow: 3;  
+  padding: 20px 20px 20px 20px;
+  
+}
+/* define propiedades de tarjeta del  producto */
+.imagen_producto {
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  object-fit: scale-down;
+  margin-left: 15px;
+}
+
+/* define propiedades de tarjeta del  producto */
+.titulo_producto {
+  white-space: nowrap;
+  overflow: hidden;  
+  width: 100%;
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+/* define propiedades de tarjeta del  producto */
+.descripcion_producto {
+  color: rgb(133, 133, 133);
+  font-size: 14px;
+  line-height: 1.5;
+}
+/* define propiedades de tarjeta del  producto */
+.precio_producto {
+  color: #ff3700;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/*footer*/
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #000;
+  color: #fff; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* RESPONSIVE */
+
+
+
+
+
+
+/* PAGINA PRODUCTO */
+
+.productos-pag { 
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 75px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 60px 57px 57px 57px;
+  box-shadow: 3px 8px 80px 24px rgba(138,131,138,1);
+
+}
+.product-pag {
+  position: relative;
+  left: 85px;  
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  max-width: 100%;
+}
+.detalles_producto{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  right: 150px;  
+  border: 2px solid #000; /* Esto añade un borde de 2px de grosor y de color negro */
+  border-radius: 15px;
+  width: 600px;
+  min-height: 700px;
+  
+}
+.comments{
+  width: 100%;
+  border-top: 2px solid #000;
+}
+
+.titulo_producto-pag {
+  font-size: 35px;
+  margin-bottom: 20px;
+  padding: 7px;
+}
+
+.imagen_producto-pag {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.descripcion_producto-pag{
+  margin-bottom: 10px;
+}
+.precio_producto-pag{
+  font-size: 35px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+#comentarios-pag {
+  margin-bottom:20px;
+  flex-direction:column-reverse;
+}
+
+#Formulario-pag {
+  margin-bottom: 5px;
+}
+label {
+  
+  display: block;
+  margin-bottom: 5px;
+}
+.textarea-pag {
+  width: 70%;
+  padding: 5px 10px;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+.button-orange {
+  background-color: #ff914d;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 10000s;
+}
+
+@keyframes fade {
+  from {opacity: 4}
+  to {opacity: 1}
+}
