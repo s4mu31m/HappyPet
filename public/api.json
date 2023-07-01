@@ -1,288 +1,223 @@
 [
-    {
-        "id": 1,
-        "title": "bravery Salmon para Gatos ",
-        "price": "$41.990",
-        "price_id": "price_1NKDPAEsVgU4DuOsAFeltNuu",
-        "description": "BRAVERY SALMON ADULT CAT",
-        "resume": "El alimento de salmón para gatos es una opción nutritiva y deliciosa diseñada específicamente para satisfacer las necesidades dietéticas de nuestros amigos felinos. Esta comida está elaborada con ingredientes de alta calidad, con el salmón como protagonista principal El salmón es una excelente fuente de proteínas magras, que ayuda a promover el desarrollo y mantenimiento de una masa muscular saludable en los gatos. Además, es rico en ácidos grasos omega-3, como el ácido eicosapentaenoico (EPA) y el ácido docosahexaenoico (DHA), que son beneficiosos para la salud del pelaje y la piel de los felinos, manteniéndolos brillantes y sedosos",
-        "category": "men's clothing",
-        "image": "..\/img\/gato\/BRAVERY SALMON ADULT CAT.jpg",
-        "comments": [
-            {
-                "nombre": "",
-                "mensaje": ""
-            }
-        ],
-        "rating": {
-            "rate": 3.9,
-            "count": 120
-        }
-    },
-    {
-        "id": 2,
-        "title": "Chaleco rojo de lana ",
-        "price": "$9.990",
-        "price_id": "price_1NKDQlEsVgU4DuOsHF0Picqa",
-        "description": "chaleco rojo perros y gatos impermeable",
-        "resume": "Dale a tu perro pequeño un toque de estilo y calidez con nuestro elegante saco rojo para perros pequeños! Este adorable accesorio está diseñado pensando en la comodidad y el estilo de tu peludo compañero El saco está confeccionado con un tejido suave y acogedor de alta calidad que brinda calidez y comodidad en los días fríos. Su llamativo color rojo le otorga un aspecto vibrante y alegre, destacando la personalidad única de tu pequeña mascota",
-        "category": "men's clothing",
-        "image": "..\/img\/gato\/chaleco_rojo_perros_y_gatos_impermeable.jpg",
-        "rating": {
-            "rate": 4.1,
-            "count": 259
-        }
-    },
-    {
-        "id": 3,
-        "title": "alimento para gatos monge",
-        "price": "$16.400",
-        "price_id": "price_1NKDSbEsVgU4DuOsk2Mt1nOS",
-        "description": "indoor cat rich in chicken",
-        "resume": "El alimento para gatos Monge es una opción excepcional que satisface todas las necesidades nutricionales de tu felino con una mezcla única de calidad, sabor y cuidado. Diseñado meticulosamente por expertos en nutrición felina, Monge se destaca por su compromiso con ingredientes de primera calidad y su enfoque en la salud y el bienestar de los gatos Cada bocado de este alimento seco de alta gama está formulado con ingredientes selectos y de calidad, como carne de aves frescas y pescado de mar. Estos ingredientes son cuidadosamente procesados ​​y sometidos a rigurosos controles de calidad para garantizar la máxima seguridad alimentaria. Además, Monge evita el uso de subproductos, colorantes artificiales y conservantes químicos, ofreciendo una opción natural y saludable para tu gato",
-        "category": "men's clothing",
-        "image": "..\/img\/gato\/indoor-cat-rich-in-chicken.jpg",
-        "rating": {
-            "rate": 4.7,
-            "count": 500
-        }
-    },
-    {
-        "id": 4,
-        "title": "Brit Care Cat Sterilized Sensitive",
-        "price": "$16.500",
-        "price_id": "price_1NKDU7EsVgU4DuOsxxPD7eWT",
-        "description": "para la salud de los ri\u00f1ones y el tracto urinario",
-        "resume": " Brit Care Cat Sterilized Sensitive es un alimento especialmente diseñado para satisfacer las necesidades de los gatos esterilizados y sensibles. Esta fórmula premium ha sido cuidadosamente elaborada para ayudar a mantener un peso saludable y promover la salud general de los gatos esterilizados, al tiempo que cuida su delicado sistema digestivo Esta comida para gatos está enriquecida con ingredientes de alta calidad, seleccionada cuidadosamente para ofrecer una nutrición equilibrada y completa. Contiene una combinación de proteínas de alta digestibilidad, como el pollo y el pavo, que ayudan a mantener una musculatura fuerte y magra, mientras satisfacen las necesidades de los gatos esterilizados",
-        "category": "men's clothing",
-        "image": "..\/img\/gato\/M_brit-care-cat-gf-sterilized-sensitive2252.jpg",
-        "rating": {
-            "rate": 2.1,
-            "count": 430
-        }
-    },
-    {
-        "id": 5,
-        "title": "PAWISE MEOW LIFE BOLA COLORES",
-        "price": "$3.390",
-        "price_id": "price_1NKDVJEsVgU4DuOs0gAsg4BD",
-        "description": "juguete para la recreacion de mascotas",
-        "resume": "Pawise Meow Life Bola Colores es un juguete interactivo y divertido diseñado específicamente para gatos. Esta bola única está diseñada en forma de esfera y está fabricada con materiales de alta calidad y duraderos para garantizar la seguridad y el entretenimiento duradero de tu felino La bola está cubierta por un tejido suave y resistente, y su interior está relleno con una combinación de materiales que producen un sonido atractivo y estimulante para los gatos. Además, su diseño colorido y brillante captará la atención de tu gato y despertará su curiosidad.",
-        "category": "jewelery",
-        "image": "..\/img\/gato\/Pawise_Meow_Life_Bola_Colores.jpg",
-        "rating": {
-            "rate": 4.6,
-            "count": 400
-        }
-    },
-    {
-        "id": 6,
-        "title": "Peluche y varita de unicornio",
-        "price": "$6.790",
-        "price_id": "price_1NKDXhEsVgU4DuOsqNZvWReJ",
-        "description": "peluche y varita de unicornio pawise",
-        "resume": "Este adorable conjunto de Peluche y Varita de Unicornio te transportará a un mundo mágico lleno de fantasía y encanto El peluche es suave y tierno, con una apariencia de unicornio que derretirá tu corazón. Su pelaje de colores suaves y brillantes crea un efecto mágico, y su cuerno dorado reluciente añade un toque de majestuosidad. Sus ojos grandes y brillantes están llenos de dulzura y curiosidad, invitándote a explorar juntos un universo de sueños",
-        "category": "jewelery",
-        "image": "..\/img\/gato\/peluche-y-varita-de-unicornio-pawise copy.jpg",
-        "rating": {
-            "rate": 3.9,
-            "count": 70
-        }
-    },
-    {
-        "id": 7,
-        "title": " Alimento pro plan para gatos  reducido en caloria 3 kl",
-        "price": "$24.990",
-        "price_id": "price_1NKDbrEsVgU4DuOs8WZp4fcY",
-        "description": "F\u00f3rmula de vanguardia que ayuda a lograr un peso corporal ideal",
-        "resume": "El alimento Pro Plan para gatos reducido en calorías es una opción nutricionalmente equilibrada y de alta calidad diseñada específicamente para satisfacer las necesidades de los gatos con tendencia al sobrepeso o que necesitan mantener un peso saludable. Cada bolsa de 3 kg está cuidadosamente formulada para proporcionar una nutrición completa y deliciosa sin comprometer el sabor o la calidad Esta fórmula reducida en calorías ha sido elaborada por expertos en nutrición felina para ayudar a los gatos a mantener un peso óptimo y alcanzar una condición corporal saludable. Con ingredientes cuidadosamente seleccionados, como proteínas de alta calidad, vitaminas y minerales esenciales, este alimento proporciona una nutrición equilibrada y deliciosa para tu gato",
-        "category": "jewelery",
-        "image": "..\/img\/gato\/Pro_plan_reduced_calorias_3_kl.png",
-        "rating": {
-            "rate": 3,
-            "count": 400
-        }
-    },
-    {
-        "id": 8,
-        "title": "Pro Plan Sterilized Cat",
-        "price": "$25.490",
-        "price_id": "",
-        "description": "alimento completo y balanceado para gatos adultos ",
-        "resume": "Pro Plan Sterilized Cat es un alimento especialmente diseñado para gatos esterilizados que brinda una nutrición completa y equilibrada para satisfacer las necesidades específicas de estos felinos Esta fórmula ha sido cuidadosamente desarrollada por expertos en nutrición felina para ayudar a mantener un peso saludable y apoyar la salud urinaria de los gatos esterilizados. Al ser esterilizados, los gatos tienden a tener un metabolismo más lento y un mayor riesgo de desarrollar problemas urinarios, por lo que es crucial proporcionarles una dieta adecuada para mantener su bienestar",
-        "category": "jewelery",
-        "image": "..\/img\/gato\/Pro_plan_sterilized_cat.png",
-        "rating": {
-            "rate": 1.9,
-            "count": 100
-        }
-    },
-    {
-        "id": 9,
-        "title": "Alimento Royal Canin",
-        "price": "$19.990",
-        "price_id": "price_1NKDfrEsVgU4DuOsYIMWxe3Z",
-        "description": "alimento completo para el gato con apetito muy exigente",
-        "resume": "Royal Canin Exigent es un alimento completo para el gato con apetito muy exigente con una preferencia natural por el sabor. Con dos croquetas diferentes que act\u00faan en sinergia para satisfacer el apetito del gato m\u00e1s caprichoso. Adem\u00e1s, su aporte de energ\u00eda es moderado. La sensaci\u00f3n en la boca es un factor distintivo en la elecci\u00f3n de un alimento. Cada gato interpreta los sabores y texturas del alimento seg\u00fan su preferencia individual. Savour sensation tiene 2 croquetas con formas, composici\u00f3n y textura distintas que act\u00faan de forma conjunta en la boca. Una respuesta nutricional completa para gatos exigentes. Aunque lo que m\u00e1s destaca son las sensaciones en la boca, Savour sensation tambi\u00e9n cumple con el resto de criterios de palatabilidad (aromas y proporci\u00f3n de nutrientes). \u00a1Una respuesta \u00fanica con una palatabilidad excelente!",
-        "category": "electronics",
-        "image": "..\/img\/gato\/ROYAL_CANIN_EXIGENT_6.png",
-        "rating": {
-            "rate": 3.3,
-            "count": 203
-        }
-    },
-    {
-        "id": 10,
-        "title": "Alimento para gato bebe  Royal Canin",
-        "price": "$32.990",
-        "price_id": "price_1NKDgfEsVgU4DuOsRUMvrEPD",
-        "description": "alimento indicado para gatitos de hasta 12 meses",
-        "resume": "El alimento para gato bebé Royal Canin es una opción excepcional para proporcionar a los gatitos una nutrición óptima y equilibrada durante sus primeros meses de vida. Diseñado por expertos en nutrición felina, este alimento se ha formulado cuidadosamente para satisfacer las necesidades específicas de los gatitos en crecimiento La fórmula de Royal Canin para gatos bebés contiene ingredientes de alta calidad que brindan un equilibrio ideal de proteínas, grasas y carbohidratos para favorecer el desarrollo adecuado de los músculos, huesos y sistema inmunológico de los gatitos. También está enriquecido con vitaminas y minerales esenciales para apoyar el crecimiento saludable y promover una piel y un pelaje brillante",
-        "category": "electronics",
-        "image": "..\/img\/gato\/ROYAL_CANIN_KITTEN_(1).png",
-        "rating": {
-            "rate": 2.9,
-            "count": 470
-        }
-    },
-    {
-        "id": 11,
-        "title": "Alimento Gato Monge Sterilised 10Kg",
-        "price": "$75.990",
-        "price_id": "price_1NKDiKEsVgU4DuOsHQOjo4dA",
-        "description": "Alimento especialmente formulado para para gatos adultos esterilizados",
-        "resume": "El alimento para gatos Monge Sterilized de 10 kg es una opción de alta calidad diseñada específicamente para satisfacer las necesidades nutricionales de los gatos esterilizados o castrados. Este alimento premium está formulado cuidadosamente para mantener a tu gato saludable y en su peso ideal después de la esterilización La fórmula de Monge Sterilized está elaborada con ingredientes seleccionados de alta calidad que ofrecen una nutrición equilibrada y completa para tu gato. Contiene un nivel óptimo de proteínas de origen animal, como el pollo y el pavo, que contribuye al desarrollo y mantenimiento de una musculatura fuerte y saludable",
-        "category": "electronics",
-        "image": "..\/img\/gato\/sterilised-rich-in-chicken.jpg",
-        "rating": {
-            "rate": 4.8,
-            "count": 319
-        }
-    },
-    {
-        "id": 12,
-        "title": " Juguete tipo pelota  para perro ",
-        "price": "$7.990",
-        "price_id": "price_1NKDjtEsVgU4DuOsYF1CLLVJ",
-        "description": "Divertido juguete tipo pelota que asegura la entretenci\u00f3n de tu perro",
-        "resume": "¡Presentamos el Juguete Super Bouncy para perros! Esta pelota de alta calidad está diseñada para proporcionar diversión y entretenimiento interminables a tu mejor amigo de cuatro patas. Fabricada con materiales duraderos y resistentes, es perfecta para perros enérgicos y juguetones El Juguete Super Bouncy tiene un diseño único con una superficie texturizada que brinda un agarre óptimo para tu perro, permitiéndole recogerla fácilmente y llevársela a todas partes. Su forma redonda y su peso equilibrado aseguran que la pelota rebote de manera impredecible, manteniendo a tu perro intrigado y comprometido en cada juego",
-        "category": "electronics",
-        "image": "..\/img\/perro\/aikiou-pelota-portagolosinas-s.jpg",
-        "rating": {
-            "rate": 4.8,
-            "count": 400
-        }
-    },
-    {
-        "id": 13,
-        "title": "Alimento para cachorros Amity",
-        "price": "$50.400",
-        "price_id": "price_1NKDlHEsVgU4DuOsyEQehtN3",
-        "description": "alimento para perros cachorros de todas las razas ",
-        "resume": "Amity, el alimento para cachorros, es una opción excepcionalmente nutritiva y balanceada diseñada específicamente para satisfacer las necesidades alimenticias de los cachorros en sus etapas de crecimiento más críticas. Con una fórmula cuidadosamente desarrollada por expertos en nutrición canina, Amity se destaca por su calidad y compromiso con el bienestar de tu cachorro Cada bocado de Amity está repleto de ingredientes de alta calidad, seleccionados cuidadosamente para brindar una nutrición óptima. Con una combinación equilibrada de proteínas de origen animal, como carne de ave o carne de res, y carbohidratos de fácil digestión, como arroz o patatas, Amity proporciona la energía necesaria para el desarrollo saludable de tu cachorro",
-        "category": "electronics",
-        "image": "..\/img\/perro\/Amity_14_kl.png",
-        "rating": {
-            "rate": 2.9,
-            "count": 250
-        }
-    },
-    {
-        "id": 14,
-        "title": "Alimento seco para perro Amity sabor a pollo ",
-        "price": "$50.990",
-        "price_id": "price_1NKDmYEsVgU4DuOsCNLQjqwO",
-        "description": "alimento para perros adultos de todas las razas y tama\u00f1os",
-        "resume": "Amity, el alimento seco para perro con delicioso sabor a pollo, es la elección perfecta para consentir a tu fiel compañero. Este alimento está diseñado para brindarle una nutrición completa y equilibrada, satisfaciendo todas las necesidades nutricionales de tu perro y manteniéndolo en óptimas condiciones de salud El sabor a pollo de Amity es irresistible para tu mascota, haciendo que cada bocado sea una experiencia deliciosa. Cada croqueta está cuidadosamente formulada para garantizar la máxima palatabilidad, lo que asegura que tu perro disfrute cada comida y se sienta emocionado al momento de alimentarse",
-        "category": "electronics",
-        "image": "..\/img\/perro\/AMITY_SP_LOW_GRAIN_CHICKEN_ADULT_14_KG.png",
-        "rating": {
-            "rate": 2.2,
-            "count": 140
-        }
-    },
-    {
-        "id": 15,
-        "title": "Alimento perros adultos Amity 14Kl sabor a carne desidratada de cerdo ",
-        "price": "$48.990",
-        "price_id": "price_1NKDnaEsVgU4DuOscWqGPn4Q",
-        "description": "Alimento Super Premium extruido para perros adultos con carne deshidratada de cerdo iberico",
-        "resume": "El alimento para perros adultos Amity de 14 kg con sabor a carne deshidratada de cerdo es una opción nutricionalmente completa y deliciosa para satisfacer las necesidades alimenticias de tu mascota. Esta fórmula especializada ha sido cuidadosamente diseñada para ofrecer una dieta equilibrada y sabrosa, asegurando que tu perro reciba todos los nutrientes esenciales que necesita para mantenerse saludable y enérgico Con un enfoque en la calidad de los ingredientes, el alimento para perros Amity utiliza carne deshidratada de cerdo como su principal fuente de proteínas, lo que garantiza un sabor irresistible que atraerá incluso a los paladares más exigentes. Esta carne de cerdo deshidratada se somete a un proceso cuidadoso para retener todos sus nutrientes esenciales, asegurando una óptima absorción y digestibilidad",
-        "category": "women's clothing",
-        "image": "..\/img\/perro\/AMITY_SP_LOW_GRAIN_IBERIAN_PORK_ADULT_14_KG.png",
-        "rating": {
-            "rate": 2.6,
-            "count": 235
-        }
-    },
-    {
-        "id": 16,
-        "title": "Alimento perros adultos sabor a salmon  Amity 14Kl ",
-        "price": "$49.990",
-        "price_id": "price_1NKDpaEsVgU4DuOs06N8DIg7",
-        "description": "alimento para perros adultos de todas las razas y tama\u00f1os formulado con salm\u00f3n",
-        "resume": "El alimento para perros adultos sabor a salmón Amity de 14Kl es una opción deliciosa y nutritiva para alimentar a tu fiel compañero. Diseñado específicamente para satisfacer las necesidades de los perros adultos, este alimento ofrece una combinación perfecta de sabores y nutrientes que promueven una salud óptima El sabor a salmón es irresistible para muchos perros, y Amity ha logrado capturar esa delicia en cada bocado. Con ingredientes de alta calidad, como salmón fresco y otros ingredientes cuidadosamente seleccionados, este alimento garantiza un sabor auténtico y una experiencia culinaria placentera para tu perro",
-        "category": "women's clothing",
-        "image": "..\/img\/perro\/AMITY_SP_LOW_GRAIN_SALMON_ADULT_14_KG.png",
-        "rating": {
-            "rate": 2.9,
-            "count": 340
-        }
-    },
-    {
-        "id": 17,
-        "title": "Brit Care Junior Large Cordero",
-        "price": "$24.990",
-        "price_id": "price_1NKDqsEsVgU4DuOsZlFfp3Y0",
-        "description": "alimento hipoalerg\u00e9nico de cordero y arroz indicado para perros j\u00f3venes",
-        "resume": "Brit Care Junior Large Cordero es una fórmula de alimentación completa y equilibrada especialmente para cachorros de razas grandes. El ingrediente principal en esta deliciosa receta es el cordero de alta calidad, que proporciona una excelente fuente de proteínas magras para el desarrollo muscular óptimo Esta comida está cuidadosamente formulada para satisfacer las necesidades nutricionales específicas de los cachorros en crecimiento. Contiene un equilibrio adecuado de proteínas, grasas, vitaminas y minerales esenciales para apoyar el desarrollo óseo y articular saludable, fortalecer el sistema inmunológico y promover una piel y pelaje radiantes",
-        "category": "women's clothing",
-        "image": "..\/img\/perro\/Brit_care_junior_large_cordero_y_arroz.jpg",
-        "rating": {
-            "rate": 3.8,
-            "count": 679
-        }
-    },
-    {
-        "id": 18,
-        "title": "Alimento h\u00famedo en lata para perro",
-        "price": "$3.590",
-        "price_id": "price_1NKDrkEsVgU4DuOspE9g9Nyk",
-        "description": "alimento h\u00famedo en lata indicado para todos los perros",
-        "resume": "El alimento húmedo en lata para perro es una opción deliciosa y nutritiva diseñada específicamente para satisfacer las necesidades alimenticias de tu fiel amigo canino. Esta sabrosa comida viene enlatada, lo que garantiza su frescura y conservación, y está compuesta por una variedad de ingredientes cuidadosamente seleccionados para ofrecer una dieta equilibrada y completa Cada lata de alimento húmedo para perro contiene una mezcla de carne de alta calidad, como pollo, ternera o pavo, combinada con verduras frescas y granos saludables. Estos ingredientes contienen una fuente de proteínas, vitaminas y minerales esenciales, indispensables para mantener la salud y vitalidad de tu perro",
-        "category": "women's clothing",
-        "image": "..\/img\/perro\/brit-mono-protein-turkey.jpg",
-        "rating": {
-            "rate": 4.7,
-            "count": 130
-        }
-    },
-    {
-        "id": 19,
-        "title": "camom pelota de tenis juguete para mascotas  ",
-        "price": "$5.290",
-        "price_id": "price_1NKDsbEsVgU4DuOsavGPOYFL",
-        "description": "Juguete de perro ",
-        "category": "women's clothing",
-        "resume": "Camom Pelota de Tenis: ¡El juguete perfecto para entretener a tus adorables mascotas La Camom Pelota de Tenis es un divertido y emocionante juguete diseñado específicamente para satisfacer las necesidades de tus mascotas activas. Esta pelota de tenis para mascotas es una opción ideal para perros y gatos enérgicos que adoran correr, perseguir y jugar durante horas Fabricada con materiales de alta calidad, la Camom Pelota de Tenis está hecha de un revestimiento resistente de campo duradero y una base de goma resistente a los mordiscos. Su diseño único y su tamaño adecuado la convertirá en un juguete fácil de recoger y llevar para sus mascotas",
-        "image": "..\/img\/perro\/camom_pelota_tenis_x_2.png",
-        "rating": {
-            "rate": 4.5,
-            "count": 146
-        }
-    },
-    {
-        "id": 20,
-        "title": "capa polar rosa para perros de rasa pequeña ",
-        "price": "$10.990",
-        "price_id": "price_1NKDtTEsVgU4DuOsFjLH6d3s",
-        "description": "Capa para mascotas confeccionada con tela polar antipilling",
-        "category": "women's clothing",
-        "resume": "La capa polar rosa para perros de raza pequeña es un accesorio encantador y funcional que brinda comodidad y estilo a tu peludo amigo. Diseñada pensando en el confort y la protección contra el frío, esta capa polar es perfecta para mantener a tu perro abrigado durante los meses más frescos Confeccionada con materiales suaves y de alta calidad, esta capa polar rosa envuelve suavemente el cuerpo de tu perro sin controlar sus movimientos. Su diseño ajustado y ergonómico asegura un ajuste perfecto, lo que permite que tu perro se sienta cómodo y libre de movimiento mientras disfruta de sus actividades diarias",
-        "image": "..\/img\/perro\/capa_polar_chiporro.png",
-        "rating": {
-            "rate": 3.6,
-            "count": 145
-        }
-    }
+  {
+    "id": 1,
+    "title": "Alimento de Salmon para Gatos ",
+    "price": "$41.990",
+    "price_id": "price_1NKDPAEsVgU4DuOsAFeltNuu",
+    "description": "BRAVERY SALMON ADULT CAT",
+    "resume": " comida bravery para gatos  sabor salmon 0 grasas saturadas y 100% natural sabor a salmon solo para gatos premiun donde a su gato se le pondra bello y sedoso el pelo donde tambien se le caera menos el pelo compralo se agota rapido     ",
+    "category": "men's clothing",
+    "image": "../img/gato/BRAVERY SALMON ADULT CAT.jpg",
+    "comments": [{ "nombre": "sam", "mensaje": "slakddflrj" }],
+    "rating": { "rate": 3.9, "count": 120 }
+  },
+  {
+    "id": 2,
+    "title": "Chaleco rojo impermeable",
+    "price": "$9.990",
+    "price_id": "price_1NKDQlEsVgU4DuOsHF0Picqa",
+    "description": "chaleco rojo perros y gatos impermeable",
+    "resume": "saco impermiable de lana color rojo  para perros y gatos ideal para este frio y para que tu mascotas se mantega alientito para esteriores y que tu peludo amigo no sufra este invierno  ",
+    "category": "men's clothing",
+    "image": "../img/gato/chaleco_rojo_perros_y_gatos_impermeable.jpg",
+    "rating": { "rate": 4.1, "count": 259 }
+  },
+  {
+    "id": 3,
+    "title": "Alimento de gatos Mayores",
+    "price": "$16.400",
+    "price_id": "price_1NKDSbEsVgU4DuOsk2Mt1nOS",
+    "description": "indoor cat rich in chicken",
+    "resume": "comida monge para gatos adultos entre 1 a 7 a\u00f1os con su rico sabor a pollo tu gato lo amara 100% natural sin conserbantes con su rico sabor a pollo tu gato amara esta comida solo para gatos premiun   ",
+    "category": "men's clothing",
+    "image": "../img/gato/indoor-cat-rich-in-chicken.jpg",
+    "rating": { "rate": 4.7, "count": 500 }
+  },
+  {
+    "id": 4,
+    "title": "Brit Care Cat Sterilized Sensitive",
+    "price": "$16.500",
+    "price_id": "price_1NKDU7EsVgU4DuOsxxPD7eWT",
+    "description": "para la salud de los ri\u00f1ones y el tracto urinario",
+    "resume": "Brit Care Cat Sterilized Sensitive  Es un alimento completo para aquellos felinos adultos de 1 a 7 a\u00f1os que han sido esterilizados, especialmente desarrollados para que puedan mantener un peso \u00f3ptimo. El contenido cal\u00f3rico se encuentra contrlado, con menos grasas y menos carbohidratos para no estimular el apetito m\u00e1s all\u00e1 de lo necesario, otorgando adem\u00e1s, un beneficio extra para mantener un sistema urinario saludable  ",
+    "category": "men's clothing",
+    "image": "../img/gato/M_brit-care-cat-gf-sterilized-sensitive2252.jpg",
+    "rating": { "rate": 2.1, "count": 430 }
+  },
+  {
+    "id": 5,
+    "title": "PAWISE MEOW LIFE BOLA COLORES",
+    "price": "$3.390",
+    "price_id": "price_1NKDVJEsVgU4DuOs0gAsg4BD",
+    "description": "juguete para la recreacion de mascotas",
+    "resume": "  Las pelotas de PAWISE MEOW LIFE BOLA COLORES son uno de los juguetes favoritos para tu gato porque le proporciona mucha actividad f\u00edsica, juegos y diversi\u00f3n. Cuando las pelotas se mueven y ruedan por el suelo, consigue llamar la atenci\u00f3n de tu felino, corre para atrapar la pelota, ser\u00e1 todo un reto para \u00e9l, lo ayuda a liberar energ\u00eda para evitar estr\u00e9s.  ",
+    "category": "jewelery",
+    "image": "../img/gato/Pawise_Meow_Life_Bola_Colores.jpg",
+    "rating": { "rate": 4.6, "count": 400 }
+  },
+  {
+    "id": 6,
+    "title": "Peluche y varita de unicornio",
+    "price": "$6.790",
+    "price_id": "price_1NKDXhEsVgU4DuOsqNZvWReJ",
+    "description": "peluche y varita de unicornio pawise",
+    "resume": "Tu gato saltar\u00e1 de emoci\u00f3n con esta varita de The Cat Band de colores brillantes y muy suaves, dise\u00f1ada con materiales de calidad y duraderos. Adem\u00e1s lo ayuda con el ejercicio diario para su salud f\u00edsica y mental.",
+    "category": "jewelery",
+    "image": "../img/gato/peluche-y-varita-de-unicornio-pawise copy.jpg",
+    "rating": { "rate": 3.9, "count": 70 }
+  },
+  {
+    "id": 7,
+    "title": "Alimento reducido en caloria 3 kl",
+    "price": "$24.990",
+    "price_id": "price_1NKDbrEsVgU4DuOs8WZp4fcY",
+    "description": "F\u00f3rmula de vanguardia que ayuda a lograr un peso corporal ideal",
+    "resume": "alimento pro plan favorece unas heces peque\u00f1as, firmes y considerablemente menos olorosas, mediante el uso de ingredientes que act\u00faan sobre la capacidad de retenci\u00f3n acuosa (zeolita y fibras insolubles) y sobre los olores fecales (FOS y zeolita). ",
+    "category": "jewelery",
+    "image": "../img/gato/Pro_plan_reduced_calorias_3_kl.png",
+    "rating": { "rate": 3, "count": 400 }
+  },
+  {
+    "id": 8,
+    "title": "Pro Plan Sterilized Cat",
+    "price": "$25.490",
+    "price_id": "",
+    "description": "alimento completo y balanceado para gatos adultos ",
+    "resume": "pro plan Sterilized Cat es un alimento equilibrado y de alta calidad para gatos adultos que favorece una digesti\u00f3n sana. Muchos gatos tienen problemas digestivos, pero gracias a las prote\u00ednas altamente digestibles y a una mezcla de prebi\u00f3ticos y fibras diet\u00e9ticas se logra una flora intestinal equilibrada y se regula la digesti\u00f3n. La sustancia prebi\u00f3tica FOS (fructooligosac\u00e1rido) favorece las bacterias buenas del intestino e impide la propagaci\u00f3n de las bacterias patol\u00f3gicas",
+    "category": "jewelery",
+    "image": "../img/gato/Pro_plan_sterilized_cat.png",
+    "rating": { "rate": 1.9, "count": 100 }
+  },
+  {
+    "id": 9,
+    "title": "Alimento Royal Canin",
+    "price": "$19.990",
+    "price_id": "price_1NKDfrEsVgU4DuOsYIMWxe3Z",
+    "description": "alimento completo para el gato con apetito muy exigente",
+    "resume": "Royal Canin Exigent es un alimento completo para el gato con apetito muy exigente con una preferencia natural por el sabor. Con dos croquetas diferentes que act\u00faan en sinergia para satisfacer el apetito del gato m\u00e1s caprichoso. Adem\u00e1s, su aporte de energ\u00eda es moderado. La sensaci\u00f3n en la boca es un factor distintivo en la elecci\u00f3n de un alimento. Cada gato interpreta los sabores y texturas del alimento seg\u00fan su preferencia individual. Savour sensation tiene 2 croquetas con formas, composici\u00f3n y textura distintas que act\u00faan de forma conjunta en la boca. Una respuesta nutricional completa para gatos exigentes. Aunque lo que m\u00e1s destaca son las sensaciones en la boca, Savour sensation tambi\u00e9n cumple con el resto de criterios de palatabilidad (aromas y proporci\u00f3n de nutrientes). \u00a1Una respuesta \u00fanica con una palatabilidad excelente!",
+    "category": "electronics",
+    "image": "../img/gato/ROYAL_CANIN_EXIGENT_6.png",
+    "rating": { "rate": 3.3, "count": 203 }
+  },
+  {
+    "id": 10,
+    "title": "Alimento para gato Royal Canin",
+    "price": "$32.990",
+    "price_id": "price_1NKDgfEsVgU4DuOsRUMvrEPD",
+    "description": "alimento indicado para gatitos de hasta 12 meses",
+    "resume": "Comida para gatitos formulada para satisfacer todas las necesidades nutricionales del felino durante sus primeros 12 meses de vida. Sus ingredientes principales son el pollo y el arroz, ambos muy f\u00e1ciles de digerir",
+    "category": "electronics",
+    "image": "../img/gato/ROYAL_CANIN_KITTEN_(1).png",
+    "rating": { "rate": 2.9, "count": 470 }
+  },
+  {
+    "id": 11,
+    "title": "Alimento Gato Monge Sterilised 10Kg",
+    "price": "$75.990",
+    "price_id": "price_1NKDiKEsVgU4DuOsHQOjo4dA",
+    "description": "Alimento especialmente formulado para para gatos adultos esterilizados",
+    "resume": "Monge Indoor Cat Chicken es un alimento especialmente formulado para para gatos mayores del a\u00f1o de edad y de estilo de vida de interior o actividad f\u00edsica moderada. Con pollo fresco y deshidratado como primer ingrediente proteico y con nivel energ\u00e9tico moderado y un nivel proteico de alta calidad. La incorporaci\u00f3n de L- CARNITINA ayuda a mantener su condici\u00f3n corporal ideal con una masa muscular y metabolismo saludable",
+    "category": "electronics",
+    "image": "../img/gato/sterilised-rich-in-chicken.jpg",
+    "rating": { "rate": 4.8, "count": 319 }
+  },
+  {
+    "id": 12,
+    "title": " Juguete para perro ",
+    "price": "$7.990",
+    "price_id": "price_1NKDjtEsVgU4DuOsYF1CLLVJ",
+    "description": "Divertido juguete tipo pelota que asegura la entretenci\u00f3n de tu perro",
+    "resume": "devertido juguete para perro es la pelota m\u00e1s duradera y que mejor rebota del mercado. El juguete perfecto para los perros a los que les gusta buscar, recoger y masticar ",
+    "category": "electronics",
+    "image": "../img/perro/aikiou-pelota-portagolosinas-s.jpg",
+    "rating": { "rate": 4.8, "count": 400 }
+  },
+  {
+    "id": 13,
+    "title": "Alimento perros adultos Amity",
+    "price": "$50.400",
+    "price_id": "price_1NKDlHEsVgU4DuOsyEQehtN3",
+    "description": "alimento para perros adultos de todas las razas y tama\u00f1os",
+    "resume": "Alimento perros adultos Amity Razas Medianas con OptiHealth y Spirulina, ayuda a fortalecer el sistema inmune y digestivo, principalmente a trav\u00e9s de la incorporaci\u00f3n de spirulina en su f\u00f3rmula, cuya efectividad ha sido cient\u00edficamente probada al ayudar a mantener las defensas naturales del sistema inmunol\u00f3gico y ayudar a optimizar la absorci\u00f3n de nutrientes clave, fortaleciendo y estabilizando la microflora intestinal. Ofrece, a trav\u00e9s de sus sabrosas croquetas, un contenido rico en prote\u00ednas (26%) y grasas (15%), utilizando como ingrediente principal carne fresca de pollo, que ayuda a los perros a mantener la masa corporal magra y m\u00fasculos fuertes para garantizarle una vida plena y saludable a tu perro",
+    "category": "electronics",
+    "image": "../img/perro/Amity_14_kl.png",
+    "rating": { "rate": 2.9, "count": 250 }
+  },
+  {
+    "id": 14,
+    "title": "Alimento seco para perro Amity",
+    "price": "$50.990",
+    "price_id": "price_1NKDmYEsVgU4DuOsCNLQjqwO",
+    "description": "alimento para perros adultos de todas las razas y tama\u00f1os",
+    "resume": "Alimento seco para perro Amity es un alimento para perros en edad adulta de cualquier raza. Se trata de una receta muy completa que utiliza como ingrediente principal la carne de pollo fresca. Con ella es posible garantizar que la mascota va a recibir todas las prote\u00ednas que necesita para mantener una musculatura fuerte. Adem\u00e1s, contiene todos los nutrientes necesarios para pueda disfrutar de una buena salud y de la m\u00e1xima vitalidad",
+    "category": "electronics",
+    "image": "../img/perro/AMITY_SP_LOW_GRAIN_CHICKEN_ADULT_14_KG.png",
+    "rating": { "rate": 2.2, "count": 140 }
+  },
+  {
+    "id": 15,
+    "title": "Alimento perros adultos Amity 14Kl ",
+    "price": "$48.990",
+    "price_id": "price_1NKDnaEsVgU4DuOscWqGPn4Q",
+    "description": "Alimento Super Premium extruido para perros adultos con carne deshidratada ",
+    "resume": "AMITY DOG IBERIAN PORK ADULT es un alimento Super Premium, extruido en forma de croquetas para perros de todas las razas con carne de cerdo iberico deshidratada la cual es una excelente fuente de proteina de bajo perfil lip\u00eddico de sabor unico y fuente de acidos graso esenciales, con ingredientes naturales, sin conservantes artificiales, gluten y transg\u00e9nicos",
+    "category": "women's clothing",
+    "image": "../img/perro/AMITY_SP_LOW_GRAIN_IBERIAN_PORK_ADULT_14_KG.png",
+    "rating": { "rate": 2.6, "count": 235 }
+  },
+  {
+    "id": 16,
+    "title": "Alimento perros adultos  Amity 14Kl ",
+    "price": "$49.990",
+    "price_id": "price_1NKDpaEsVgU4DuOs06N8DIg7",
+    "description": "alimento para perros adultos de todas las razas y tama\u00f1os formulado con salm\u00f3n",
+    "resume": "Alimento perros adultos Amity 14Kl Es un alimento con salm\u00f3n para perros de razas medianas y grandes. Libre de grano y cereales, adem\u00e1s, de ser monoprote\u00edco, con salm\u00f3n siempre como primer ingrediente y enriquecido con antioxidantes hipoalerg\u00e9nicos 100% naturales. Es una receta que se encuentra un elevado contenido de prote\u00ednas, alta digestibilidad y palatabilidad, ideal para razas de perros adultos medianos y grandes",
+    "category": "women's clothing",
+    "image": "../img/perro/AMITY_SP_LOW_GRAIN_SALMON_ADULT_14_KG.png",
+    "rating": { "rate": 2.9, "count": 340 }
+  },
+  {
+    "id": 17,
+    "title": "Brit Care Junior Large Cordero",
+    "price": "$24.990",
+    "price_id": "price_1NKDqsEsVgU4DuOsZlFfp3Y0",
+    "description": "alimento hipoalerg\u00e9nico de cordero y arroz indicado para perros j\u00f3venes",
+    "resume": "El alimento Brit Care Junior Large Cordero razas medianas ofrece a tu perro una comida completa y equilibrada para que tenga una salud \u00f3ptima. Su f\u00f3rmula aporta todos los nutrientes, vitaminas y minerales que necesita en su d\u00eda a d\u00eda para estar fuerte y sano. Un alimento rico en prote\u00ednas y libre de cereales elaborado con ingredientes de la mejor calidad",
+    "category": "women's clothing",
+    "image": "../img/perro/Brit_care_junior_large_cordero_y_arroz.jpg",
+    "rating": { "rate": 3.8, "count": 679 }
+  },
+  {
+    "id": 18,
+    "title": "Alimento h\u00famedo en lata",
+    "price": "$3.590",
+    "price_id": "price_1NKDrkEsVgU4DuOspE9g9Nyk",
+    "description": "alimento h\u00famedo en lata indicado para todos los perros",
+    "resume": "Alimento h\u00famedo en lata brit mono protein  es un alimento completo y equilibrado especialmente formulado para la recuperaci\u00f3n de perros y gatos convalescientes, que tienen su apetito reducido y necesitan m\u00e1s aporte de prote\u00ednas y calor\u00edas. La alta densidad energ\u00e9tica compensa la reduci\u00f3n del volumen de la raci\u00f3n de los animales con apetito disminuido, adem\u00e1s, su textura facilita su uso para alimentar a trav\u00e9s de jeringuillas y en sondas de nutrici\u00f3n enteral. Los animales enfermos a menudo muestran una p\u00e9rdida de apetito y de peso, la excelente palatabilidad de RECOVERY hace que sea la soluci\u00f3n ideal durante los cuidados intensivos.",
+    "category": "women's clothing",
+    "image": "../img/perro/brit-mono-protein-turkey.jpg",
+    "rating": { "rate": 4.7, "count": 130 }
+  },
+  {
+    "id": 19,
+    "title": "camom pelota tenis",
+    "price": "$5.290",
+    "price_id": "price_1NKDsbEsVgU4DuOsavGPOYFL",
+    "description": "Juguete de perro ",
+    "category": "women's clothing",
+    "resume": "La camom pelota tenis combina dos juguetes cl\u00e1sicos para perros \u2014la pelota de tenis y el chirriador\u2014 para crear el juguete de buscar y recoger perfecto. Nuestra pelota , resistente y de alta calidad, no desgastar\u00e1 los dientes del perro. Est\u00e1 hecha con un fieltro no abrasivo especial, no con el material abrasivo de las pelotas de tenis normales",
+    "image": "../img/perro/camom_pelota_tenis_x_2.png",
+    "rating": { "rate": 4.5, "count": 146 }
+  },
+  {
+    "id": 20,
+    "title": "capa polar chiporro",
+    "price": "$10.990",
+    "price_id": "price_1NKDtTEsVgU4DuOsFjLH6d3s",
+    "description": "Capa para mascotas confeccionada con tela polar antipilling",
+    "category": "women's clothing",
+    "resume": "La  capa polar chiporro confeccionada en lana ultrarresistente, es lo \u00faltimo en funcionalidad y comodidad. F\u00e1cil de poner, el forro polar  hacen de esta chaqueta la protecci\u00f3n perfecta en los d\u00edas h\u00famedos y fr\u00edos. \u00daselo solo o sobre su su\u00e9ter GF PET favorito o la capa base de g\u00f3ndola",
+    "image": "../img/perro/capa_polar_chiporro.png",
+    "rating": { "rate": 3.6, "count": 145 }
+  }
 ]
