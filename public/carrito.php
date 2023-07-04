@@ -20,8 +20,9 @@ require "../partials/navbar.php";
         <main class="productos">
             <?php foreach ($_SESSION['carrito'] as $producto_id) {
                     foreach ($productos as $producto) {
-                        if ($producto['id'] == $producto_id) {
-                            ?> <div class="product"> <?php
+                        if ($producto['id'] == $producto_id): ?>
+                            <div class="product">
+                            <?php
 
                             echo "<h2 class='titulo_producto'>" . $producto['title'] . "</h2>";
                             echo "<img class='imagen_producto' src='" . $producto['image'] . "' alt='Imagen del producto'>";
@@ -51,9 +52,10 @@ require "../partials/navbar.php";
                             ";
                             break;
                             ?> </div> <?php
+                        endif;
                         }
                     }
-                }
+                
             ?>
         </main>
     </div>

@@ -2,24 +2,29 @@
 
 session_start();
 
+// * Crear Conexión con MongoDb
+require '../public/mongo.php';
+$client = connectMongoDB();
 
-// Leer el archivo JSON
-$json = file_get_contents('api.json');
+// * Buscar en la Base de Datos correspondiente
+$db = $client->happypet;
+$collection = $db->products;
+// * Guardarlos en una Variable.
+$cursor =$collection->find();
 
-// Decodificar el JSON a un array de objetos PHP
-$productos = json_decode($json);
+
 
 require "../partials/header.php";
 
 ?>
 
-
-
-
 <body>
 
   <?php require "../partials/navbar.php"; ?>
 
+  <div class="slider-frame">
+
+  </div>
 
 
 
@@ -127,7 +132,7 @@ require "../partials/header.php";
 
     <main class="productos">
 
-      <?php foreach ($productos as $producto) : ?>
+      <?php foreach ($cursor as $producto) : ?>
         <a class="product-link" href="productos.php?id=<?php echo $producto->id; ?>">
 
           <div class="product">
