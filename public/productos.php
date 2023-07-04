@@ -4,13 +4,19 @@ require "../partials/header.php";
 require "../partials/navbar.php";
 
 $id = $_GET['id']; // Obtiene el ID del producto del parámetro GET
+// * Crear Conexión con MongoDb
+require '../public/mongo.php';
+$client = connectMongoDB();
 
-// Carga todos los productos de products.json
-$products = json_decode(file_get_contents('api.json'), true);
+// * Buscar en la Base de Datos correspondiente
+$db = $client->happypet;
+$collection = $db->products;
+// * Guardarlos en una Variable.
+$cursor =$collection->find();
 
 // Encuentra el producto con el ID proporcionado
 $product = null;
-foreach ($products as $p) {
+foreach ($cursor as $p) {
     if ($p['id'] == $id) {
         $product = $p;
         break;

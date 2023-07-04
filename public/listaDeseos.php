@@ -3,16 +3,29 @@
 session_start();
 
 require "../database.php";
+require "../mongo.php"; // Asume que este archivo incluye tu función `connectMongoDB()`
+
+// Crear una nueva instancia de MongoDB\Client y conectar a tu base de datos y colección
+$client = connectMongoDB();
+$db = $client->happypet;
+$collection = $db->products;
+
 $stmt = $conn->prepare("SELECT product_id FROM wishlist WHERE user_id = :user_id");
 $stmt->bindParam(':user_id', $_SESSION['user']['id']);
 $stmt->execute();
 
 $id_productos = $stmt->fetchAll(PDO::FETCH_COLUMN);
-$json = file_get_contents('api.json');
-$productos = json_decode($json,true);
-$wishlist_products = array_filter($productos, function($product) use ($id_productos) {
-  return in_array($product['id'], $id_productos);
-});
+
+$wishlist_products = [];
+foreach ($id_productos as $id_producto) {
+    // Buscar el producto en MongoDB usando el ID
+    $product = $collection->findOne(['id' => $id_producto]);
+    if ($product !== null) {
+        // Si el producto existe, añadirlo a $wishlist_products
+        $wishlist_products[] = $product;
+    }
+}
+
 require "../partials/header.php";
 
 ?>
