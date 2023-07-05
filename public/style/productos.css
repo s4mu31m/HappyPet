@@ -43,6 +43,7 @@
     display: flex;
     margin: 10px 10px 10px 10px;
   }
+ 
 
 
   /* comentarios  */
@@ -149,10 +150,8 @@
     cursor: pointer;
     border-radius: 4px;
   }
+ 
 
-  form {
-    padding-bottom: 30px;
-  }
 }
 
 
