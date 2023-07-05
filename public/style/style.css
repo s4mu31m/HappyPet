@@ -184,10 +184,19 @@ nav {
 }
 .productos2 .descripcion_producto{  
   font-size: 20px; 
-  color: #000;
+  color: #000;  
+  margin-left: -400px;
 }
-
-
+.productos2 .precio_producto{
+  color: #ff3700;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: -150px;
+  margin-left: 2px;
+}
+.productos2 img{
+  margin-bottom: 30px;
+}
 
 
 /*footer*/
