@@ -3,7 +3,7 @@
 session_start();
 
 require "../database.php";
-require "../mongo.php"; // Asume que este archivo incluye tu función `connectMongoDB()`
+require "../public/mongo.php"; // Asume que este archivo incluye tu función `connectMongoDB()`
 
 // Crear una nueva instancia de MongoDB\Client y conectar a tu base de datos y colección
 $client = connectMongoDB();
