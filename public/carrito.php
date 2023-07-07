@@ -7,6 +7,12 @@ if (isset($_POST['cart'])) {
     $producto_id = $_POST['product_id'];
     $_SESSION['carrito'][] = $producto_id;
 };
+if(isset($_POST['remove'])){
+    $producto_id=$_POST['remove_product_id'];
+    if(($key=array_search($producto_id,$_SESSION['carrito']))!==false){
+        unset($_SESSION['carrito'][$key]);
+    }
+}
 // * Crear Conexión con MongoDb
 require '../public/mongo.php';
 $client = connectMongoDB();
