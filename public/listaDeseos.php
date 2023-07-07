@@ -67,7 +67,22 @@ require "../partials/header.php";
             }
             echo "</div>";
             ?>
-          </div>
+            <div>
+            <form action="carrito.php" method="POST">
+              <input type="hidden" name="product_id" value="<?php echo $id; ?>">
+              <button type="submit" name="cart" class="button-carrfav">Agregar al carrito de compra</button>
+            </form>
+            <form action="eliminarDeseos.php" method="POST">
+                    <input type="hidden" name="product_id" value="<?php echo $producto['id']; ?>">
+                    <button type="submit" id="checkout-button" class="button-fav">Eliminar</button>
+            </form>
+            </div>
+          </div>    
+           
+             
+            
+          
+          
         <?php endforeach; ?>
     </main>
 
