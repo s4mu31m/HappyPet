@@ -41,18 +41,20 @@ require "../partials/header.php";
 
   <div>
 
-    <main class="productos">
+    <main class="productos2">
 
       <?php foreach ($wishlist_products as $producto) : ?>
         <a class="product-link" href="productos.php?id=<?php echo $producto['id']; ?>">
-          <div class="product">
+          <div class="product2">           
+          
 
             <?php
-
-            echo "<h2 class='titulo_producto'>" . $producto['title'] . "</h2>";
-            echo "<img class='imagen_producto' src='" . $producto['image'] . "' alt='Imagen del producto'>";
-            echo "<p class='descripcion_prodcuto'>" . $producto['description'] . "</p>";
-            echo "<p class='precio_producto'>Precio: " . $producto['price'] . "</p>";
+            echo "<img class='imagen_prodfav' src='" . $producto['image'] . "' alt='Imagen del producto'>";
+            echo "<h2 class='titulo_prodfav'>" . $producto['title'] . "</h2>";    
+            echo "<p class='precio_prodfav'>Precio: " . $producto['price'] . "</p>";
+            echo "<p class='descripcion_prodfav'>" . $producto['description'] . "</p>";
+            
+          
 
             // Procesar la calificación
             $calificacion = round($producto['rating']['rate']);
@@ -87,5 +89,6 @@ require "../partials/header.php";
     </main>
 
   </div>
+
 
   <?php require "../partials/footer.php"; ?>
