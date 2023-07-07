@@ -32,15 +32,16 @@ require "../partials/header.php";
 
       <?php foreach ($wishlist_products as $producto) : ?>
         <a class="product-link" href="productos.php?id=<?php echo $producto['id']; ?>">
-          <div class="product2">
+          <div class="product2">           
+          
 
             <?php
-
-            echo "<h2 class='titulo_producto'>" . $producto['title'] . "</h2>";            
-            echo "<img class='imagen_producto' src='" . $producto['image'] . "' alt='Imagen del producto'>";
-            echo "<p class='precio_producto'>Precio: " . $producto['price'] . "</p>";
-            echo "<p class='descripcion_producto'>" . $producto['description'] . "</p>";
+            echo "<img class='imagen_prodfav' src='" . $producto['image'] . "' alt='Imagen del producto'>";
+            echo "<h2 class='titulo_prodfav'>" . $producto['title'] . "</h2>";    
+            echo "<p class='precio_prodfav'>Precio: " . $producto['price'] . "</p>";
+            echo "<p class='descripcion_prodfav'>" . $producto['description'] . "</p>";
             
+          
 
             // Procesar la calificación
             $calificacion = round($producto['rating']['rate']);
@@ -55,7 +56,22 @@ require "../partials/header.php";
             }
             echo "</div>";
             ?>
-          </div>
+            <div>
+            <form action="carrito.php" method="POST">
+              <input type="hidden" name="product_id" value="<?php echo $id; ?>">
+              <button type="submit" name="cart" class="button-carrfav">Agregar al carrito de compra</button>
+            </form>
+            <form action="checkout.php" method="POST">
+                    <input type="hidden" name="product_id" value="<?php echo $id; ?>">
+                    <button type="submit" id="checkout-button" class="button-fav">Eliminar</button>
+            </form>
+            </div>
+          </div>    
+           
+             
+            
+          
+          
         <?php endforeach; ?>
     </main>
 
