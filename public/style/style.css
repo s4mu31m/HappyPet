@@ -243,8 +243,27 @@ nav {
   cursor: pointer;
   border-radius: 4px;
 }
-.product2.estrellas2{
-  background-color: #000;
+.estrellas2 {
+  position: relative;
+  display: flex;
+  left: 150px;
+}
+
+.estrellas2 span {
+  display: inline-block;
+  position: relative;
+  padding-right: 2px;
+  margin: 0 10px;
+  /* Agrega margen alrededor de cada estrella */
+}
+
+.estrellas2 span::before {
+  content: "☆";
+
+}
+
+.estrellas2 span.completa::before {
+  content: "★";
 }
 
 

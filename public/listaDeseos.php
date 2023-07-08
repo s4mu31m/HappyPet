@@ -45,7 +45,7 @@ require "../partials/header.php";
 
             // Procesar la calificación
             $calificacion = round($producto['rating']['rate']);
-            echo "<div class='estrellas'>";
+            echo "<div class='estrellas2'>";
             for ($i = 1; $i <= 5; $i++) {
               // Si el valor de calificación es mayor que o igual a $i, entonces esta estrella debe estar completa
               if ($calificacion >= $i) {
