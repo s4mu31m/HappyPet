@@ -23,6 +23,20 @@ foreach ($cursor as $p) {
     }
 }
 
+
+if (!isset($_SESSION['carrito'])) {
+    $_SESSION['carrito'] = array();
+}
+
+if (isset($_POST['cart'])) {
+    $producto_id = $_POST['product_id'];
+    if (isset($_SESSION['carrito'][$producto_id])) {
+        $_SESSION['carrito'][$producto_id] += 1;
+    } else {
+        $_SESSION['carrito'][$producto_id] = 1;
+    }
+}
+
 if ($product) {
 ?>
     <link rel="stylesheet" href="style/productos.css" />
@@ -89,7 +103,7 @@ if ($product) {
                     <input type="hidden" name="product_id" value="<?php echo $id; ?>">
                     <button type="submit" name="wishlist" class="button-orange">Agregar a la lista de deseos</button>
                 </form>
-                <form action="carrito.php" method="POST">
+                <form  method="POST">
                     <input type="hidden" name="product_id" value="<?php echo $id; ?>">
                     <button type="submit" name="cart" class="button-orange">Agregar al carrito de compra</button>
                 </form>

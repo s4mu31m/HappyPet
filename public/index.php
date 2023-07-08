@@ -34,24 +34,24 @@ require "../partials/header.php";
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
       <div class="numbertext">1 / 4</div>
-      <img src="img\sliders\BANNER HAPPY PET.png" style="width:100%">
+      <img src="img\sliders\BANNER HAPPY PET.webp" style="width:100%">
       <div class="text"></div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">2 / 4</div>
-      <img src="img\sliders\BANNER HAPPY PET (1).png" style="width:100%">
+      <img src="img\sliders\BANNER HAPPY PET (1).webp" style="width:100%">
       <div class="text"></div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">3/ 4</div>
-      <img src="img\sliders\BANNER HAPPY PET (2).png" style="width:100%">
+      <img src="img\sliders\BANNER HAPPY PET (2).webp" style="width:100%">
       <div class="text"></div>
     </div>
     <div class="mySlides fade">
       <div class="numbertext">4 / 4</div>
-      <img src="img\sliders\BANNER HAPPY PET (3).png" style="width:100%">
+      <img src="img\sliders\BANNER HAPPY PET (3).webp" style="width:100%">
       <div class="text"></div>
     </div>
 
