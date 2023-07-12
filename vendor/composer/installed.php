@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '483560e80a5bb8d5e775ec86dc5edb197c79351b',
+        'reference' => '167901247b149d463f43cf74787a9fb91be520a3',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '483560e80a5bb8d5e775ec86dc5edb197c79351b',
+            'reference' => '167901247b149d463f43cf74787a9fb91be520a3',
             'dev_requirement' => false,
         ),
         'graham-campbell/result-type' => array(
@@ -65,12 +65,12 @@
             'dev_requirement' => false,
         ),
         'stripe/stripe-php' => array(
-            'pretty_version' => 'v1.18.0',
-            'version' => '1.18.0.0',
+            'pretty_version' => 'v10.0.0',
+            'version' => '10.0.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../stripe/stripe-php',
             'aliases' => array(),
-            'reference' => '022c3f21ec1e4141b46738bd5e7ab730d04f78cc',
+            'reference' => 'a895466e5208cc7974bc3bed80abe825418ce0b0',
             'dev_requirement' => false,
         ),
         'symfony/polyfill-ctype' => array(
