@@ -58,7 +58,7 @@ require "../partials/header.php";
 
             // Procesar la calificación
             $calificacion = round($producto['rating']['rate']);
-            echo "<div class='estrellas'>";
+            echo "<div class='estrellas2'>";
             for ($i = 1; $i <= 5; $i++) {
               // Si el valor de calificación es mayor que o igual a $i, entonces esta estrella debe estar completa
               if ($calificacion >= $i) {
@@ -74,8 +74,10 @@ require "../partials/header.php";
               <input type="hidden" name="product_id" value="<?php echo $id; ?>">
               <button type="submit" name="cart" class="button-carrfav">Agregar al carrito de compra</button>
             </form>
+
             <form action="eliminarDeseos.php" method="POST">
                     <input type="hidden" name="product_id" value="<?php echo $producto['id']; ?>">
+
                     <button type="submit" id="checkout-button" class="button-fav">Eliminar</button>
             </form>
             </div>

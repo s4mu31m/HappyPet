@@ -163,6 +163,7 @@ nav {
   gap: 40px;
   padding-left: 15%; 
   padding-right: 15%;
+
 }
 .product2{    
   display: flex; 
@@ -243,9 +244,10 @@ nav {
   cursor: pointer;
   border-radius: 4px;
 }
-.product2.estrellas2{
-  background-color: #000;
-}
+.estrellas2 {
+  position: relative;
+  display: flex;
+  left: 150px;
 
 
 
