@@ -1,19 +1,31 @@
 <?php
+
 session_start();
 
 // Incluir el archivo de la base de datos
-include '../database.php';
+require_once '../database.php';
 
 // Comprobar si el usuario ha iniciado sesión
-if(isset($_SESSION["user"])){
-    // El usuario ha iniciado sesión. Eliminar el producto de la lista de deseos.
-    removeFromWishlist($_SESSION['user']['id'], $_POST['product_id']);
-} else {
+if (!isset($_SESSION["user"])) {
     // El usuario no ha iniciado sesión. Redirigir a la página de inicio de sesión o mostrar una alerta.
-    echo "<script type='text/javascript'>alert('Por favor, inicie sesión para eliminar artículos de su lista de deseos.'); 
-    window.location.href = 'login.php';</script>";
+    echo "<script type='text/javascript'>
+            alert('Por favor, inicie sesión para eliminar artículos de su lista de deseos.'); 
+            window.location.href = 'login.php';
+          </script>";
+    exit; // Finalizar la ejecución del script.
 }
 
+// El usuario ha iniciado sesión. Eliminar el producto de la lista de deseos.
+removeFromWishlist($_SESSION['user']['id'], $_POST['product_id']);
+header("Location: index.php");
+
+/**
+ * Elimina un producto de la lista de deseos de un usuario.
+ *
+ * @param int $userId ID del usuario
+ * @param int $productId ID del producto
+ * @return void
+ */
 function removeFromWishlist($userId, $productId) {
     global $conn; // Usar la conexión de la base de datos que ya has establecido
   
@@ -22,7 +34,7 @@ function removeFromWishlist($userId, $productId) {
     
     // Comprobar si la preparación fue exitosa
     if ($stmt === false) {
-      die("Error preparing statement: " . $conn->errorInfo()[2]);
+        die("Error preparing statement: " . $conn->errorInfo()[2]);
     }
   
     $stmt->bindParam(':user_id', $userId);
@@ -33,12 +45,10 @@ function removeFromWishlist($userId, $productId) {
   
     // Comprobar si la ejecución fue exitosa
     if ($execute_result === false) {
-      die("Error executing statement: " . $stmt->errorInfo()[2]);
+        die("Error executing statement: " . $stmt->errorInfo()[2]);
     }
   
     // Cerrar la declaración y la conexión
     $stmt = null;
     $conn = null;
-  }
-  header("Location: index.php");
-?>
+}

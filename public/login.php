@@ -38,18 +38,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingresa a tu cuenta</title>
-    <link rel="stylesheet" href = "style\login.css" />
-    <script src="ruta_del_archivo.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingresa a tu cuenta</title>
+  <link rel="stylesheet" href="style\login.css" />
+  <script src="ruta_del_archivo.js"></script>
 
 </head>
 
 <body>
-  
-  
+
+
   <div class="container">
     <h1>Bienvenido</h1>
     <form action="login.php" method="POST">
@@ -72,4 +73,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
       </div>
     </form>
-  </div> 
+  </div>

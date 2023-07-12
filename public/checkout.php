@@ -1,6 +1,5 @@
 <?php
 
-
 $id = $_POST['product_id'];
 
 // Carga todos los productos de products.json
@@ -21,7 +20,7 @@ require_once '../secrets.php';
 \Stripe\Stripe::setApiKey($stripeSecretKey);
 header('Content-Type: application/json');
 
-$YOUR_DOMAIN = 'http://qa.happypet.uno';
+$YOUR_DOMAIN = 'http://happypet.uno';
 
 $checkout_session = \Stripe\Checkout\Session::create([
   'line_items' => [[

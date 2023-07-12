@@ -1,6 +1,9 @@
 <?php
-
 session_start();
+require "../partials/header.php";
+require "../partials/navbar.php";
+require 'cart_functions.php';
+
 //! En Main no se trabajará con mongo
 // // * Crear Conexión con MongoDb
 // require '../public/mongo.php';
@@ -13,19 +16,18 @@ session_start();
 // $cursor =$collection->find();
 //!---------------------------------
 
+//*consumir poductos internamente
 $productos = json_decode(file_get_contents("api.json"),true);
-require "../partials/header.php";
-require "../partials/navbar.php";
-require 'cart_functions.php';
 
+//?Funcion para restar productos del carrito
 if (isset($_POST['subtract'])) {
     subtractFromCart($_POST['subtract']);
 }
-
+//?Sumar productos al carrito
 if (isset($_POST['add'])) {
     addToCart($_POST['add']);
 }
-
+//?Eliminar productos del carrito
 if (isset($_POST['remove'])) {
     removeFromCart($_POST['remove_product_id']);
 }
