@@ -1,6 +1,6 @@
 {
     "require": {
-        "stripe/stripe-php": "^10.15",
+        "stripe/stripe-php": "^1.8",
         "phpmailer/phpmailer": "^6.8",
         "vlucas/phpdotenv": "^5.5",
         "mongodb/mongodb": "^1.12"
