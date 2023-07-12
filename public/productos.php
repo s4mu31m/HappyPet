@@ -4,16 +4,36 @@ require "../partials/header.php";
 require "../partials/navbar.php";
 
 $id = $_GET['id']; // Obtiene el ID del producto del parámetro GET
+// * Crear Conexión con MongoDb
+require '../public/mongo.php';
+$client = connectMongoDB();
 
-// Carga todos los productos de products.json
-$products = json_decode(file_get_contents('api.json'), true);
+// * Buscar en la Base de Datos correspondiente
+$db = $client->happypet;
+$collection = $db->products;
+// * Guardarlos en una Variable.
+$cursor =$collection->find();
 
 // Encuentra el producto con el ID proporcionado
 $product = null;
-foreach ($products as $p) {
+foreach ($cursor as $p) {
     if ($p['id'] == $id) {
         $product = $p;
         break;
+    }
+}
+
+
+if (!isset($_SESSION['carrito'])) {
+    $_SESSION['carrito'] = array();
+}
+
+if (isset($_POST['cart'])) {
+    $producto_id = $_POST['product_id'];
+    if (isset($_SESSION['carrito'][$producto_id])) {
+        $_SESSION['carrito'][$producto_id] += 1;
+    } else {
+        $_SESSION['carrito'][$producto_id] = 1;
     }
 }
 
@@ -83,7 +103,7 @@ if ($product) {
                     <input type="hidden" name="product_id" value="<?php echo $id; ?>">
                     <button type="submit" name="wishlist" class="button-orange">Agregar a la lista de deseos</button>
                 </form>
-                <form action="carrito.php" method="POST">
+                <form  method="POST">
                     <input type="hidden" name="product_id" value="<?php echo $id; ?>">
                     <button type="submit" name="cart" class="button-orange">Agregar al carrito de compra</button>
                 </form>

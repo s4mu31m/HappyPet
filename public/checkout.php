@@ -2,6 +2,7 @@
 
 
 $id = $_POST['product_id'];
+
 // Carga todos los productos de products.json
 $products = json_decode(file_get_contents('api.json'), true);
 
@@ -13,6 +14,7 @@ foreach ($products as $p) {
     break;
   }
 }
+
 require_once '../vendor/autoload.php';
 require_once '../secrets.php';
 
