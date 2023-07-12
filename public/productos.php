@@ -3,7 +3,6 @@ session_start();
 require "../partials/header.php";
 require "../partials/navbar.php";
 
-$id = $_GET['id']; // Obtiene el ID del producto del parámetro GET
 //! En Main no se trabajará con mongo
 // // * Crear Conexión con MongoDb
 // require '../public/mongo.php';
@@ -16,6 +15,8 @@ $id = $_GET['id']; // Obtiene el ID del producto del parámetro GET
 // $cursor =$collection->find();
 //!---------------------------------
 
+require 'cart_functions.php';
+$id = $_GET['id']; // Obtiene el ID del producto del parámetro GET
 $productos = json_decode(file_get_contents("api.json"),true);
 
 // Encuentra el producto con el ID proporcionado
@@ -27,19 +28,11 @@ foreach ($productos as $p) {
     }
 }
 
-
-if (!isset($_SESSION['carrito'])) {
-    $_SESSION['carrito'] = array();
-}
-
 if (isset($_POST['cart'])) {
-    $producto_id = $_POST['product_id'];
-    if (isset($_SESSION['carrito'][$producto_id])) {
-        $_SESSION['carrito'][$producto_id] += 1;
-    } else {
-        $_SESSION['carrito'][$producto_id] = 1;
-    }
+    addToCart($_POST['product_id']);
 }
+
+
 
 if ($product) {
 ?>

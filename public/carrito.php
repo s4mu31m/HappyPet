@@ -1,11 +1,6 @@
 <?php
 
 session_start();
-
-// * Crear Conexión con MongoDb
-require '../public/mongo.php';
-$client = connectMongoDB();
-
 //! En Main no se trabajará con mongo
 // // * Crear Conexión con MongoDb
 // require '../public/mongo.php';
@@ -21,7 +16,19 @@ $client = connectMongoDB();
 $productos = json_decode(file_get_contents("api.json"),true);
 require "../partials/header.php";
 require "../partials/navbar.php";
+require 'cart_functions.php';
 
+if (isset($_POST['subtract'])) {
+    subtractFromCart($_POST['subtract']);
+}
+
+if (isset($_POST['add'])) {
+    addToCart($_POST['add']);
+}
+
+if (isset($_POST['remove'])) {
+    removeFromCart($_POST['remove_product_id']);
+}
 
 ?>
 
@@ -53,7 +60,7 @@ require "../partials/navbar.php";
                                 echo "</div>";
                                 ?>
                                 <div>
-                                    <form action="selectorCantidad.php" method="POST">
+                                    <form  method="POST">
                                         <input type="hidden" name="subtract" value="<?php echo $producto['id']; ?>">
                                         <button type="submit" class="button-carrfav">
                                             <svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-minus' width='24' height='24' viewBox='0 0 24 24' stroke-width='1.5' stroke='#ffffff' fill='none' stroke-linecap='round' stroke-linejoin='round'>
@@ -63,7 +70,7 @@ require "../partials/navbar.php";
                                         </button>
                                     </form>
                                     <input type='text' value='<?php echo $cantidad; ?>' class='carrito-titulo_productos' disabled>
-                                    <form action="selectorCantidad.php" method="POST">
+                                    <form  method="POST">
                                         <input type="hidden" name="add" value="<?php echo $producto['id']; ?>">
                                         <button type="submit" class="button-carrfav">
                                             <svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-plus' width='24' height='24' viewBox='0 0 24 24' stroke-width='1.5' stroke='#ffffff' fill='none' stroke-linecap='round' stroke-linejoin='round'>
@@ -72,7 +79,7 @@ require "../partials/navbar.php";
                                             </svg>
                                         </button>
                                     </form>
-                                    <form action="selectorCantidad.php" method="POST">
+                                    <form  method="POST">
                                         <input type="hidden" name="remove_product_id" value="<?php echo $producto['id']; ?>">
                                         <button type="submit" name="remove" class="button-fav">Eliminar</button>
                                     </form>
