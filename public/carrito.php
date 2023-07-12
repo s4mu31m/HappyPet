@@ -6,12 +6,19 @@ session_start();
 require '../public/mongo.php';
 $client = connectMongoDB();
 
-// * Buscar en la Base de Datos correspondiente
-$db = $client->happypet;
-$collection = $db->products;
-// * Guardarlos en una Variable.
-$cursor = $collection->find();
-$carritoCursor = iterator_to_array($cursor);
+//! En Main no se trabajará con mongo
+// // * Crear Conexión con MongoDb
+// require '../public/mongo.php';
+// $client = connectMongoDB();
+
+// // * Buscar en la Base de Datos correspondiente
+// $db = $client->happypet;
+// $collection = $db->products;
+// // * Guardarlos en una Variable.
+// $cursor =$collection->find();
+//!---------------------------------
+
+$productos = json_decode(file_get_contents("api.json"),true);
 require "../partials/header.php";
 require "../partials/navbar.php";
 
@@ -23,10 +30,10 @@ require "../partials/navbar.php";
         <main class="productos2">
             <?php
             foreach ($_SESSION['carrito'] as $producto_id => $cantidad) {
-                foreach ($carritoCursor as $producto) {
+                foreach ($productos as $producto) {
                     if ($producto['id'] == $producto_id) {
             ?>
-                        <a class="product-link" href="productos.php?id=<?php echo $producto['id']; ?>">
+                       
                             <div class="product2">
                                 <?php
                                 echo "<img class='imagen_prodfav' src='" . $producto['image'] . "' alt='Imagen del producto'>";

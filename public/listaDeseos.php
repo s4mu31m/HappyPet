@@ -3,12 +3,19 @@
 session_start();
 
 require "../database.php";
-require "../public/mongo.php"; // Asume que este archivo incluye tu función `connectMongoDB()`
+//! En Main no se trabajará con mongo
+// // * Crear Conexión con MongoDb
+// require '../public/mongo.php';
+// $client = connectMongoDB();
 
-// Crear una nueva instancia de MongoDB\Client y conectar a tu base de datos y colección
-$client = connectMongoDB();
-$db = $client->happypet;
-$collection = $db->products;
+// // * Buscar en la Base de Datos correspondiente
+// $db = $client->happypet;
+// $collection = $db->products;
+// // * Guardarlos en una Variable.
+// $cursor =$collection->find();
+//!---------------------------------
+
+$productos = json_decode(file_get_contents("api.json"),true);
 
 $stmt = $conn->prepare("SELECT product_id FROM wishlist WHERE user_id = :user_id");
 $stmt->bindParam(':user_id', $_SESSION['user']['id']);
@@ -16,15 +23,22 @@ $stmt->execute();
 
 $id_productos = $stmt->fetchAll(PDO::FETCH_COLUMN);
 
-$wishlist_products = [];
-foreach ($id_productos as $id_producto) {
-    // Buscar el producto en MongoDB usando el ID
-    $product = $collection->findOne(['id' => $id_producto]);
-    if ($product !== null) {
-        // Si el producto existe, añadirlo a $wishlist_products
-        $wishlist_products[] = $product;
-    }
-}
+//! En Main no se trabajará con mongo
+// $wishlist_products = [];
+// foreach ($id_productos as $id_producto) {
+//     // Buscar el producto en MongoDB usando el ID
+//     $product = $collection->findOne(['id' => $id_producto]);
+//     if ($product !== null) {
+//         // Si el producto existe, añadirlo a $wishlist_products
+//         $wishlist_products[] = $product;
+//     }
+// }
+//!---------------------------------
+
+$wishlist_products = array_filter($productos, function($product) use ($id_productos) {
+  return in_array($product['id'], $id_productos);
+});
+
 
 require "../partials/header.php";
 
@@ -44,7 +58,7 @@ require "../partials/header.php";
     <main class="productos2">
 
       <?php foreach ($wishlist_products as $producto) : ?>
-        <a class="product-link" href="productos.php?id=<?php echo $producto['id']; ?>">
+        
           <div class="product2">           
           
 

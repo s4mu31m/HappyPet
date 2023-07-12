@@ -1,16 +1,20 @@
 <?php
 
 session_start();
+//! En Main no se trabajará con mongo
+// // * Crear Conexión con MongoDb
+// require '../public/mongo.php';
+// $client = connectMongoDB();
 
-// * Crear Conexión con MongoDb
-require '../public/mongo.php';
-$client = connectMongoDB();
+// // * Buscar en la Base de Datos correspondiente
+// $db = $client->happypet;
+// $collection = $db->products;
+// // * Guardarlos en una Variable.
+// $cursor =$collection->find();
+//!---------------------------------
 
-// * Buscar en la Base de Datos correspondiente
-$db = $client->happypet;
-$collection = $db->products;
-// * Guardarlos en una Variable.
-$cursor =$collection->find();
+$productos = json_decode(file_get_contents("api.json"),true);
+
 
 
 
@@ -132,20 +136,20 @@ require "../partials/header.php";
 
     <main class="productos">
 
-      <?php foreach ($cursor as $producto) : ?>
-        <a class="product-link" href="productos.php?id=<?php echo $producto->id; ?>">
+      <?php foreach ($productos as $producto) : ?>
+        <a class="product-link" href="productos.php?id=<?php echo $producto ['id']; ?>">
 
           <div class="product">
 
             <?php
 
-            echo "<h2 class='titulo_producto'>" . $producto->title . "</h2>";
-            echo "<img class='imagen_producto' src='" . $producto->image . "' alt='Imagen del producto'>";
-            echo "<p class='descripcion_prodcuto'>" . $producto->description . "</p>";
-            echo "<p class='precio_producto'>Precio: " . $producto->price . "</p>";
+            echo "<h2 class='titulo_producto'>" . $producto['title'] . "</h2>";
+            echo "<img class='imagen_producto' src='" . $producto ['image'] . "' alt='Imagen del producto'>";
+            echo "<p class='descripcion_prodcuto'>" . $producto ['description'] . "</p>";
+            echo "<p class='precio_producto'>Precio: " . $producto ['price'] . "</p>";
 
             // Procesar la calificación
-            $calificacion = round($producto->rating->rate);
+            $calificacion = round($producto['rating']['rate']);
             echo "<div class='estrellas'>";
             for ($i = 1; $i <= 5; $i++) {
               // Si el valor de calificación es mayor que o igual a $i, entonces esta estrella debe estar completa
