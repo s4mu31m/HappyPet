@@ -1,7 +1,6 @@
 <?php
-session_start();
-require "../partials/header.php";
 
+session_start();
 //! En Main no se trabajará con mongo
 // // * Crear Conexión con MongoDb
 // require '../public/mongo.php';
@@ -13,16 +12,26 @@ require "../partials/header.php";
 // // * Guardarlos en una Variable.
 // $cursor =$collection->find();
 //!---------------------------------
+
 $productos = json_decode(file_get_contents("api.json"),true);
 
+
+
+
+require "../partials/header.php";
+
 ?>
+
 <body>
 
   <?php require "../partials/navbar.php"; ?>
-<!-- SLIDER -->
+
   <div class="slider-frame">
 
   </div>
+
+
+
   <!-- Slideshow container -->
   <div class="slideshow-container">
 
@@ -122,7 +131,7 @@ $productos = json_decode(file_get_contents("api.json"),true);
       setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
   </script>
-<!-- SLIDER -->
+
   <div>
 
     <main class="productos">

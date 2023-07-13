@@ -1,9 +1,9 @@
 <?php
+
 session_start();
-require "../partials/header.php";
+
 require "../database.php";
 require 'cart_functions.php';
-
 //! En Main no se trabajará con mongo
 // // * Crear Conexión con MongoDb
 // require '../public/mongo.php';
@@ -15,7 +15,6 @@ require 'cart_functions.php';
 // // * Guardarlos en una Variable.
 // $cursor =$collection->find();
 //!---------------------------------
-
 
 $productos = json_decode(file_get_contents("api.json"),true);
 
@@ -46,6 +45,7 @@ $wishlist_products = array_filter($productos, function($product) use ($id_produc
 });
 
 
+require "../partials/header.php";
 
 ?>
 
