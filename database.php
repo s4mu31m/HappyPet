@@ -3,7 +3,6 @@
 $host = "localhost";
 $database = "happypet";
 $user = "root";
-
 $password = "123456";
 
 

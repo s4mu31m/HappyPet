@@ -62,26 +62,26 @@ if (isset($_POST['remove'])) {
                                 <div>
                                     <form  method="POST">
                                         <input type="hidden" name="subtract" value="<?php echo $producto['id']; ?>">
-                                        <button type="submit" class="button-carrfav">
-                                            <svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-minus' width='24' height='24' viewBox='0 0 24 24' stroke-width='1.5' stroke='#ffffff' fill='none' stroke-linecap='round' stroke-linejoin='round'>
+                                        <button type="submit" class="button-carrfav2">
+                                            <svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-minus' width='24' height='22' viewBox='0 0 24 24' stroke-width='1.5' stroke='#ffffff' fill='none' stroke-linecap='round' stroke-linejoin='round'>
                                                 <path stroke='none' d='M0 0h24v24H0z' fill='none' />
                                                 <path d='M5 12h14' />
                                             </svg>
-                                        </button>
+                                        </button>                                    
                                     </form>
-                                    <input type='text' value='<?php echo $cantidad; ?>' class='carrito-titulo_productos' disabled>
-                                    <form  method="POST">
+                                    <form   method="POST">
                                         <input type="hidden" name="add" value="<?php echo $producto['id']; ?>">
-                                        <button type="submit" class="button-carrfav">
+                                        <button type="submit" class="button-carrfav3">
                                             <svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-plus' width='24' height='24' viewBox='0 0 24 24' stroke-width='1.5' stroke='#ffffff' fill='none' stroke-linecap='round' stroke-linejoin='round'>
                                                 <path stroke='none' d='M0 0h24v24H0z' fill='none' />
                                                 <path d='M5 12h14m-7 -7v14' />
                                             </svg>
                                         </button>
                                     </form>
-                                    <form  method="POST">
+                                    <input type='text' value='<?php echo $cantidad; ?>' class='carrito-titulo_productos' disabled>
+                                    <form   method="POST">
                                         <input type="hidden" name="remove_product_id" value="<?php echo $producto['id']; ?>">
-                                        <button type="submit" name="remove" class="button-fav">Eliminar</button>
+                                        <button type="submit" name="remove" class="botelimi">Eliminar</button>
                                     </form>
                                 </div>
                             </div>
