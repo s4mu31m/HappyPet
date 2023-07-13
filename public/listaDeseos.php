@@ -1,8 +1,9 @@
 <?php
-
 session_start();
-
+require "../partials/header.php";
 require "../database.php";
+require 'cart_functions.php';
+
 //! En Main no se trabajará con mongo
 // // * Crear Conexión con MongoDb
 // require '../public/mongo.php';
@@ -14,6 +15,7 @@ require "../database.php";
 // // * Guardarlos en una Variable.
 // $cursor =$collection->find();
 //!---------------------------------
+
 
 $productos = json_decode(file_get_contents("api.json"),true);
 
@@ -35,12 +37,15 @@ $id_productos = $stmt->fetchAll(PDO::FETCH_COLUMN);
 // }
 //!---------------------------------
 
+if (isset($_POST['cart'])) {
+  addToCart($_POST['product_id']);
+}
+
 $wishlist_products = array_filter($productos, function($product) use ($id_productos) {
   return in_array($product['id'], $id_productos);
 });
 
 
-require "../partials/header.php";
 
 ?>
 
@@ -84,8 +89,8 @@ require "../partials/header.php";
             echo "</div>";
             ?>
             <div>
-            <form action="carrito.php" method="POST">
-              <input type="hidden" name="product_id" value="<?php echo $id; ?>">
+            <form  method="POST">
+              <input type="hidden" name="product_id" value="<?php echo $producto['id']; ?>">
               <button type="submit" name="cart" class="button-carrfav">Agregar al carrito de compra</button>
             </form>
 

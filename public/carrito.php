@@ -1,7 +1,10 @@
 <?php
-
 session_start();
 
+
+require "../partials/header.php";
+require "../partials/navbar.php";
+require 'cart_functions.php';
 
 
 //! En Main no se trabajará con mongo
@@ -16,10 +19,21 @@ session_start();
 // $cursor =$collection->find();
 //!---------------------------------
 
+//*consumir poductos internamente
 $productos = json_decode(file_get_contents("api.json"),true);
-require "../partials/header.php";
-require "../partials/navbar.php";
 
+//?Funcion para restar productos del carrito
+if (isset($_POST['subtract'])) {
+    subtractFromCart($_POST['subtract']);
+}
+//?Sumar productos al carrito
+if (isset($_POST['add'])) {
+    addToCart($_POST['add']);
+}
+//?Eliminar productos del carrito
+if (isset($_POST['remove'])) {
+    removeFromCart($_POST['remove_product_id']);
+}
 
 ?>
 
@@ -52,7 +66,7 @@ require "../partials/navbar.php";
                                 ?>
                                 
                                 <div>
-                                    <form action="selectorCantidad.php" method="POST">
+                                    <form  method="POST">
                                         <input type="hidden" name="subtract" value="<?php echo $producto['id']; ?>">
                                         <button type="submit" class="button-carrfav2">
                                             <svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-minus' width='24' height='22' viewBox='0 0 24 24' stroke-width='1.5' stroke='#ffffff' fill='none' stroke-linecap='round' stroke-linejoin='round'>
@@ -61,7 +75,9 @@ require "../partials/navbar.php";
                                             </svg>
                                         </button>                                    
                                     </form>
-                                    <form  action="selectorCantidad.php" method="POST">
+
+                                    <input type='text' value='<?php echo $cantidad; ?>' class='carrito-titulo_productos' disabled>
+                                    <form  method="POST">
                                         <input type="hidden" name="add" value="<?php echo $producto['id']; ?>">
                                         <button type="submit" class="button-carrfav3">
                                             <svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-plus' width='24' height='24' viewBox='0 0 24 24' stroke-width='1.5' stroke='#ffffff' fill='none' stroke-linecap='round' stroke-linejoin='round'>
@@ -70,8 +86,9 @@ require "../partials/navbar.php";
                                             </svg>
                                         </button>
                                     </form>
+
                                     <input type='text' value='<?php echo $cantidad; ?>' class='carrito-titulo_productos' disabled>
-                                    <form  action="selectorCantidad.php" method="POST">
+                                    <form  method="POST">
                                         <input type="hidden" name="remove_product_id" value="<?php echo $producto['id']; ?>">
                                         <button type="submit" name="remove" class="botelimi">Eliminar</button>
                                     </form>

@@ -2,8 +2,8 @@
 session_start();
 require "../partials/header.php";
 require "../partials/navbar.php";
+require 'cart_functions.php';
 
-$id = $_GET['id']; // Obtiene el ID del producto del parámetro GET
 //! En Main no se trabajará con mongo
 // // * Crear Conexión con MongoDb
 // require '../public/mongo.php';
@@ -16,7 +16,8 @@ $id = $_GET['id']; // Obtiene el ID del producto del parámetro GET
 // $cursor =$collection->find();
 //!---------------------------------
 
-$productos = json_decode(file_get_contents("api.json"),true);
+$id = $_GET['id']; // Obtiene el ID del producto del parámetro GET
+$productos = json_decode(file_get_contents("api.json"), true);
 
 // Encuentra el producto con el ID proporcionado
 $product = null;
@@ -27,18 +28,8 @@ foreach ($productos as $p) {
     }
 }
 
-
-if (!isset($_SESSION['carrito'])) {
-    $_SESSION['carrito'] = array();
-}
-
 if (isset($_POST['cart'])) {
-    $producto_id = $_POST['product_id'];
-    if (isset($_SESSION['carrito'][$producto_id])) {
-        $_SESSION['carrito'][$producto_id] += 1;
-    } else {
-        $_SESSION['carrito'][$producto_id] = 1;
-    }
+    addToCart($_POST['product_id']);
 }
 
 if ($product) {
@@ -107,7 +98,7 @@ if ($product) {
                     <input type="hidden" name="product_id" value="<?php echo $id; ?>">
                     <button type="submit" name="wishlist" class="button-orange">Agregar a la lista de deseos</button>
                 </form>
-                <form  method="POST">
+                <form method="POST">
                     <input type="hidden" name="product_id" value="<?php echo $id; ?>">
                     <button type="submit" name="cart" class="button-orange">Agregar al carrito de compra</button>
                 </form>
@@ -132,7 +123,4 @@ if ($product) {
     // Si no se encontró el producto, muestra un mensaje de error
     echo "<p>Producto no encontrado.</p>";
 }
-
-require "../partials/footer.php";
-
-    ?>
+require "../partials/footer.php"; ?>
