@@ -7,7 +7,7 @@
         
     </div>
     <!-- si la sesion esta iniciada, mostrará el correo del Usuario -->
-    <?php if (isset($_SESSION["user"])) : ?>
+    <?php if (isset($_SESSION['user']["email"])) : ?>
         <ul class="enlaces">
             <li><a href="index.php">Inicio</a></li>
             <li> <a href="">Productos</a></li>
@@ -25,5 +25,7 @@
             <li> <a href="carrito.php"><i class="fa-sharp fa-solid fa-cart-shopping fa-xl"></i></a></li>
             <li> <a href="login.php"><i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i></a></a></li>
         </ul>
-    <?php endif ?>
+    
+    <?php endif;?>
+    
 </nav>
