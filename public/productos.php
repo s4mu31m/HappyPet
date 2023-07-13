@@ -4,21 +4,46 @@ require "../partials/header.php";
 require "../partials/navbar.php";
 
 $id = $_GET['id']; // Obtiene el ID del producto del parámetro GET
+//! En Main no se trabajará con mongo
+// // * Crear Conexión con MongoDb
+// require '../public/mongo.php';
+// $client = connectMongoDB();
 
-// Carga todos los productos de products.json
-$products = json_decode(file_get_contents('api.json'), true);
+// // * Buscar en la Base de Datos correspondiente
+// $db = $client->happypet;
+// $collection = $db->products;
+// // * Guardarlos en una Variable.
+// $cursor =$collection->find();
+//!---------------------------------
+
+$productos = json_decode(file_get_contents("api.json"),true);
 
 // Encuentra el producto con el ID proporcionado
 $product = null;
-foreach ($products as $p) {
+foreach ($productos as $p) {
     if ($p['id'] == $id) {
         $product = $p;
         break;
     }
 }
 
+
+if (!isset($_SESSION['carrito'])) {
+    $_SESSION['carrito'] = array();
+}
+
+if (isset($_POST['cart'])) {
+    $producto_id = $_POST['product_id'];
+    if (isset($_SESSION['carrito'][$producto_id])) {
+        $_SESSION['carrito'][$producto_id] += 1;
+    } else {
+        $_SESSION['carrito'][$producto_id] = 1;
+    }
+}
+
 if ($product) {
 ?>
+    <link rel="stylesheet" href="style/productos.css" />
 
     <body>
         <script>
@@ -80,11 +105,14 @@ if ($product) {
                 </form>
                 <form action="wishlist.php" method="POST">
                     <input type="hidden" name="product_id" value="<?php echo $id; ?>">
-                    <button type="submit" class="button-orange">Agregar a la lista de deseos</button>
-                    <button type="submit" class="button-orange">Agregar al carrito de compra</button>
+                    <button type="submit" name="wishlist" class="button-orange">Agregar a la lista de deseos</button>
+                </form>
+                <form  method="POST">
+                    <input type="hidden" name="product_id" value="<?php echo $id; ?>">
+                    <button type="submit" name="cart" class="button-orange">Agregar al carrito de compra</button>
                 </form>
             </div>
-            <div class="comments">                
+            <div class="comments">
                 <div id="comentarios"></div>
                 <h3>Agregar comentario</h3>
                 <form id="Formulario" onsubmit="agregarComentario(event)">
