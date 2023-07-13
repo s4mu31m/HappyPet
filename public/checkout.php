@@ -15,7 +15,7 @@ foreach ($products as $p) {
   }
 }
 
-require_once '../vendor/autoload.php';
+require_once '..\vendor\autoload.php';
 require_once '../secrets.php';
 
 \Stripe\Stripe::setApiKey($stripeSecretKey);

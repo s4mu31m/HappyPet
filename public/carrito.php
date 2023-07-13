@@ -30,6 +30,12 @@ if (isset($_POST['remove'])) {
     removeFromCart($_POST['remove_product_id']);
 }
 
+//Pagar productos del carrito
+if (isset($_POST['pagar'])){
+    pagar($_POST['pagar']);
+    
+}
+
 ?>
 
 <body>
@@ -82,6 +88,10 @@ if (isset($_POST['remove'])) {
                                     <form   method="POST">
                                         <input type="hidden" name="remove_product_id" value="<?php echo $producto['id']; ?>">
                                         <button type="submit" name="remove" class="botelimi">Eliminar</button>
+                                    </form>
+                                    <form action ='checkout.php' method ="POST">
+                                        <input type="hidden" name="pagar" value="<?php echo $producto['id']; ?>">
+                                        <button type="submit" class="button-pagar">Pagar</button>
                                     </form>
                                 </div>
                             </div>
