@@ -16,7 +16,7 @@ session_start();
 $productos = json_decode(file_get_contents("api.json"),true);
 require "../partials/header.php";
 require "../partials/navbar.php";
-require 'cart_functions.php';
+require '../public/cart_functions.php';
 
 if (isset($_POST['subtract'])) {
     subtractFromCart($_POST['subtract']);
@@ -29,6 +29,8 @@ if (isset($_POST['add'])) {
 if (isset($_POST['remove'])) {
     removeFromCart($_POST['remove_product_id']);
 }
+
+
 
 ?>
 
@@ -59,7 +61,7 @@ if (isset($_POST['remove'])) {
                                 }
                                 echo "</div>";
                                 ?>
-                                <div>
+                                <div class='contenedor-botones'>
                                     <form  method="POST">
                                         <input type="hidden" name="subtract" value="<?php echo $producto['id']; ?>">
                                         <button type="submit" class="button-carrfav2">
@@ -82,6 +84,10 @@ if (isset($_POST['remove'])) {
                                     <form   method="POST">
                                         <input type="hidden" name="remove_product_id" value="<?php echo $producto['id']; ?>">
                                         <button type="submit" name="remove" class="botelimi">Eliminar</button>
+                                    </form>
+                                    <form action ='checkout.php' method ="POST">
+                                        <input type="hidden" name="product_id" value="<?php echo $producto['id']; ?>">
+                                        <button type="submit" class="button-pagar">Pagar</button>
                                     </form>
                                 </div>
                             </div>
