@@ -61,7 +61,7 @@ if (isset($_POST['remove'])) {
                                 }
                                 echo "</div>";
                                 ?>
-                                <div>
+                                <div class='contenedor-botones'>
                                     <form  method="POST">
                                         <input type="hidden" name="subtract" value="<?php echo $producto['id']; ?>">
                                         <button type="submit" class="button-carrfav2">
